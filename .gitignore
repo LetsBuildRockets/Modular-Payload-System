@@ -10,3 +10,4 @@
 *.log
 
 *desktop.ini
+*.~lock*
