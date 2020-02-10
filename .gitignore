@@ -1,0 +1,12 @@
+# Eagle files
+*.s#*
+*.b#*
+*.l#*
+*.job
+*.pro
+
+# LTSpice Files
+*.raw
+*.log
+
+*desktop.ini
