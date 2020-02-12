@@ -12733,9 +12733,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </sheet>
 <sheet>
 <plain>
-<text x="99.06" y="66.04" size="1.27" layer="91">Use internal power good here for en?</text>
+<text x="99.06" y="66.04" size="2.54" layer="91">Use internal power good here for en?</text>
 <text x="264.16" y="139.7" size="2.54" layer="91" rot="MR0">recalculate voltage divider for FB</text>
 <text x="264.16" y="73.66" size="2.54" layer="91" rot="MR0">replace FB voltage drivider with fixed output for 5V?</text>
+<text x="157.48" y="50.8" size="2.54" layer="91">more bulk</text>
+<text x="205.74" y="182.88" size="2.54" layer="91">simulate output ringing??</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -13574,6 +13576,8 @@ In this library the device names are the same as the pin names of the symbols, t
 </sheet>
 <sheet>
 <plain>
+<text x="106.68" y="116.84" size="2.54" layer="91" ratio="10">Fix rail names here</text>
+<text x="149.86" y="193.04" size="2.54" layer="91" ratio="10">add 1k pullup on swclk</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
