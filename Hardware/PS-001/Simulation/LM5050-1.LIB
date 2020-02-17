@@ -1,0 +1,95 @@
+*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* (C) National Semiconductor, Corporation.
+* Models developed and under copyright by:
+* National Semiconductor, Corporation.  
+*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* Legal Notice:  
+* The model may be copied, and distributed without any modifications;
+* however, reselling or licensing the material is illegal.
+* We reserve the right to make changes to the model without any prior notice.
+* Pspice Models are provided "AS IS, WITH NO WARRANTY OF ANY KIND"
+*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* Model Number 	     : LM5050-1 High Side OR-ing FET Controller
+* Last Revision Date : May 25, 2011
+* Revision Number    : 1.0
+* E-mail feedback    : http://wwwd.national.com/feedback/
+* Generated from Pspice Plugin Ver. 16.3
+*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* This model has only been tested with Orcad PSPICE.  
+* Additional modifications maybe required to work with other SPICE packages
+*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*
+*<Introduction >
+*This document contains the PSPICE model and the simulation circuit example for National Semiconductor's LM5050-1.
+*The LM5050-1 High Side OR-ing FET Controller operates in conjunction with an external MOSFET
+*as an ideal rectifier when connected in sereies with a power source.
+*
+*<LM5050-1 Model>
+*The LM5050-1 model contains all of the basic features including:
+*- Input Operating Voltage Range 5V to 100V, Biased From VS Pin
+*- Current Source Gate Driver for External N-Channel MOSFET
+*- Gate Driver Supply Diode OR'd From IN or VS Pins
+*- 12V Gate Clamp with Additional Zener Protection
+*- 25 ns Reverse Current Comparator
+*- 250 ns Off Comparator
+*- 1.5 Ohm Gate Turn-Off Switch
+*- 20 mV Minimum VDS Clamp for Fast Turn-Off
+*- Pin Bias Currents
+*- Pin Reverse Voltage Diode Clamps
+*
+*<Assumptions and limitations>
+*Model & Example Assumptions:
+*- Temperature variations are not considered.
+*
+*<Note>
+*- To run the simulation, a simulation profile should be added first.
+*- Click 'New Simulation Profile' and set the simulation time to 20 ms.
+*- The simulation takes less than 1 second per 20 ms simulation on a 2.4 GHz machine.
+*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*$
+.SUBCKT LM5050-1 VS GND OFF IN GATE OUT
+G1         IN GND TABLE { V(IN, GND) } ( (0 0) (3.5 0) (11 600u) (11.1 300u) (75 310u) )
+G2         OUT GND TABLE { V(OUT, GND) } ( (0 0) (3 0) (5 3.5u) (75 3.5u) )
+G3         VS GND TABLE { V(VS, GND) } ( (0 0) (3.5 0) (5 80u) (11 100u) (15 110u) (30 115u) (75 125u) )
+G4         OFF GND VALUE { LIMIT(V(OFF, GND)*5u,-5u,5u) }
+G5         GATE IN VALUE { LIMIT(V(OUT, REFB)*50m,0,50u) }
+I1         IN GATE DC 32u
+E1         C B VALUE { IF(V(EN)>1,LIMIT(V(VD, GND)*1.2,0,11),0) }
+E2         DCHA 0 VALUE { IF(V(EN)>1,IF(V(FTM)>1,5,IF(V(REV)>1,5,0)),0)  }
+E3         ENA 0 VALUE { IF(V(VS,GND)>4.8,5,0) }
+V1         IN REFB 20m
+V2         5V 0 5
+D1         GND IN D1N4148_1
+D2         GND OUT D1N4148_1
+D3         IN VD D1N4148_1
+D4         GND VS D1N4148_1
+D5         VS VD D1N4148_1
+D6         GATE D D1N4148_1
+D7         GND OFF D1N4148_1
+D8         IN GATE D1N4744
+C1         IN GATE  1p
+C2         GND C  1p
+C3         0 DCH  1p
+C4         0 EN  1p
+R1         B IN  100
+R2         C D  10k
+R3         0 FTM  10k
+R4         DCHA DCH  100
+R5         ENA EN  100
+R6         0 REV  10k
+RS1        OFF GND  1G
+RS2        DCH 0  1G
+RS3        OUT IN  1G
+S1         5V FTM OFF GND LM5050-1_S1 
+S2         GATE IN DCH 0 LM5050-1_S2 
+S3         5V REV OUT IN LM5050-1_S3 
+.MODEL     LM5050-1_S1 VSWITCH Roff=1e6 Ron=1 VH=0.16 VT=1.47 *TD=250n
+.MODEL     LM5050-1_S2 VSWITCH Roff=50Meg Ron=1.5 Voff=0.1V Von=1.0V
+.MODEL     LM5050-1_S3 VSWITCH Roff=1e6 Ron=1 VH=10m VT=27m *TD=25n
+.model  D1N4744  D(Is=3.142f Rs=3.544 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=72.5p M=.3282
++          Vj=.75 Fc=.5 Isr=1.973n Nr=2 Bv=15 Ibv=.14467 Nbv=1.093
++          Ibvl=.1m Nbvl=1.2722 Tbv1=001433.3u)
+.model  D1N4148_1  D(Is=2.682n N=1.836 Rs=.5664 Ikf=44.17m Xti=3 Eg=1.11 Cjo=4p
++          M=.3333 Vj=.5 Fc=.5 Isr=1.565n Nr=2 Bv=100 Ibv=100u Tt=11.54n)
+.ENDS LM5050-1
+*$
