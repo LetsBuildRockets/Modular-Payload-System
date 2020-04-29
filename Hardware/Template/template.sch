@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9741,11 +9741,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 </net>
 <net name="CAN_N" class="0">
 <segment>
-<wire x1="38.1" y1="187.96" x2="53.34" y2="187.96" width="0.1524" layer="91"/>
-<label x="53.34" y="187.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="A" pin="6"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="CANL"/>
 <label x="17.78" y="43.18" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <wire x1="17.78" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
@@ -10513,6 +10508,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <label x="53.34" y="124.46" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="A" pin="6"/>
 </segment>
+<segment>
+<wire x1="38.1" y1="187.96" x2="53.34" y2="187.96" width="0.1524" layer="91"/>
+<label x="53.34" y="187.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="A" pin="6"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -10542,6 +10542,26 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <junction x="93.98" y="48.26"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<wire x1="228.6" y1="149.86" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="152.4" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="154.94" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="31"/>
+<wire x1="228.6" y1="157.48" x2="238.76" y2="157.48" width="0.1524" layer="91"/>
+<junction x="228.6" y="157.48"/>
+<pinref part="J3" gate="A" pin="33"/>
+<wire x1="238.76" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+<junction x="228.6" y="154.94"/>
+<pinref part="J3" gate="A" pin="35"/>
+<wire x1="238.76" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
+<junction x="228.6" y="152.4"/>
+<pinref part="J3" gate="A" pin="37"/>
+<wire x1="238.76" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+</segment>
+</net>
+<net name="+12V" class="0">
 <segment>
 <wire x1="228.6" y1="175.26" x2="223.52" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="29"/>
@@ -10601,24 +10621,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <pinref part="J4" gate="A" pin="27"/>
 <pinref part="J4" gate="A" pin="29"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
-</segment>
-<segment>
-<wire x1="228.6" y1="149.86" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="152.4" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="154.94" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="J3" gate="A" pin="31"/>
-<wire x1="228.6" y1="157.48" x2="238.76" y2="157.48" width="0.1524" layer="91"/>
-<junction x="228.6" y="157.48"/>
-<pinref part="J3" gate="A" pin="33"/>
-<wire x1="238.76" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
-<junction x="228.6" y="154.94"/>
-<pinref part="J3" gate="A" pin="35"/>
-<wire x1="238.76" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
-<junction x="228.6" y="152.4"/>
-<pinref part="J3" gate="A" pin="37"/>
-<wire x1="238.76" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>
