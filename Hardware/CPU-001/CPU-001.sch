@@ -14216,6 +14216,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/NCP718BSN180T
 <part name="U$2" library="Supply" deviceset="+1.8V" device=""/>
 <part name="U$3" library="Supply" deviceset="+1.8V" device=""/>
 <part name="U$6" library="Supply" deviceset="+1.8V" device=""/>
+<part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16759,9 +16763,9 @@ and do we want an RTC?</text>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="IC1" gate="G$1" x="58.42" y="149.86" smashed="yes">
-<attribute name="NAME" x="64.77" y="157.48" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="64.77" y="154.94" size="1.778" layer="96" align="center-left"/>
+<instance part="IC1" gate="G$1" x="50.8" y="149.86" smashed="yes">
+<attribute name="NAME" x="57.15" y="157.48" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="57.15" y="154.94" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="R1" gate="G$1" x="160.02" y="185.42" smashed="yes">
 <attribute name="NAME" x="153.924" y="185.6486" size="1.778" layer="95"/>
@@ -16915,13 +16919,25 @@ and do we want an RTC?</text>
 <attribute name="NAME" x="153.924" y="76.4286" size="1.778" layer="95"/>
 <attribute name="VALUE" x="163.068" y="76.454" size="1.778" layer="96"/>
 </instance>
+<instance part="+3V9" gate="G$1" x="45.72" y="160.02" smashed="yes">
+<attribute name="VALUE" x="43.18" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V10" gate="G$1" x="88.9" y="160.02" smashed="yes">
+<attribute name="VALUE" x="86.36" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND25" gate="1" x="48.26" y="73.66" smashed="yes">
+<attribute name="VALUE" x="45.72" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="GND29" gate="1" x="86.36" y="73.66" smashed="yes">
+<attribute name="VALUE" x="83.82" y="71.12" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="A[0..11],BA[0..1],CAS,CDCK,CDCKE,CDCS,DQ[0..15],DQMH,DQML,RAS,SDWE">
 <segment>
-<wire x1="48.26" y1="157.48" x2="48.26" y2="73.66" width="0.762" layer="92"/>
-<wire x1="48.26" y1="73.66" x2="53.34" y2="68.58" width="0.762" layer="92"/>
-<wire x1="53.34" y1="68.58" x2="96.52" y2="68.58" width="0.762" layer="92"/>
+<wire x1="30.48" y1="157.48" x2="30.48" y2="73.66" width="0.762" layer="92"/>
+<wire x1="30.48" y1="73.66" x2="35.56" y2="68.58" width="0.762" layer="92"/>
+<wire x1="35.56" y1="68.58" x2="96.52" y2="68.58" width="0.762" layer="92"/>
 <label x="71.12" y="66.04" size="1.27" layer="95"/>
 <wire x1="96.52" y1="68.58" x2="101.6" y2="73.66" width="0.762" layer="92"/>
 <wire x1="101.6" y1="73.66" x2="101.6" y2="157.48" width="0.762" layer="92"/>
@@ -16944,8 +16960,8 @@ and do we want an RTC?</text>
 <net name="DQ0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ0"/>
-<wire x1="58.42" y1="147.32" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
-<label x="50.8" y="147.32" size="1.27" layer="95"/>
+<wire x1="50.8" y1="147.32" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
+<label x="33.02" y="147.32" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -16956,8 +16972,8 @@ and do we want an RTC?</text>
 <net name="DQ1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ1"/>
-<wire x1="58.42" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<label x="50.8" y="142.24" size="1.27" layer="95"/>
+<wire x1="50.8" y1="142.24" x2="30.48" y2="142.24" width="0.1524" layer="91"/>
+<label x="33.02" y="142.24" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -16968,8 +16984,8 @@ and do we want an RTC?</text>
 <net name="DQ2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ2"/>
-<wire x1="58.42" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
-<label x="50.8" y="139.7" size="1.27" layer="95"/>
+<wire x1="50.8" y1="139.7" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
+<label x="33.02" y="139.7" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -16980,8 +16996,8 @@ and do we want an RTC?</text>
 <net name="DQ3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ3"/>
-<wire x1="58.42" y1="134.62" x2="48.26" y2="134.62" width="0.1524" layer="91"/>
-<label x="50.8" y="134.62" size="1.27" layer="95"/>
+<wire x1="50.8" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<label x="33.02" y="134.62" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -16992,8 +17008,8 @@ and do we want an RTC?</text>
 <net name="DQ4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ4"/>
-<wire x1="58.42" y1="132.08" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
-<label x="50.8" y="132.08" size="1.27" layer="95"/>
+<wire x1="50.8" y1="132.08" x2="30.48" y2="132.08" width="0.1524" layer="91"/>
+<label x="33.02" y="132.08" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -17004,8 +17020,8 @@ and do we want an RTC?</text>
 <net name="DQ5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ5"/>
-<wire x1="58.42" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
-<label x="50.8" y="127" size="1.27" layer="95"/>
+<wire x1="50.8" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
+<label x="33.02" y="127" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -17016,8 +17032,8 @@ and do we want an RTC?</text>
 <net name="DQ6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ6"/>
-<wire x1="58.42" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
-<label x="50.8" y="124.46" size="1.27" layer="95"/>
+<wire x1="50.8" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
+<label x="33.02" y="124.46" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -17028,8 +17044,8 @@ and do we want an RTC?</text>
 <net name="DQ7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ7"/>
-<wire x1="58.42" y1="119.38" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
-<label x="50.8" y="119.38" size="1.27" layer="95"/>
+<wire x1="50.8" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<label x="33.02" y="119.38" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
@@ -17040,8 +17056,8 @@ and do we want an RTC?</text>
 <net name="A10" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A10"/>
-<wire x1="58.42" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
-<label x="50.8" y="96.52" size="1.27" layer="95"/>
+<wire x1="50.8" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="33.02" y="96.52" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -17052,8 +17068,8 @@ and do we want an RTC?</text>
 <net name="A0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A0"/>
-<wire x1="58.42" y1="93.98" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
-<label x="50.8" y="93.98" size="1.27" layer="95"/>
+<wire x1="50.8" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="33.02" y="93.98" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -17064,8 +17080,8 @@ and do we want an RTC?</text>
 <net name="A1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A1"/>
-<wire x1="58.42" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
-<label x="50.8" y="91.44" size="1.27" layer="95"/>
+<wire x1="50.8" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<label x="33.02" y="91.44" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -17076,8 +17092,8 @@ and do we want an RTC?</text>
 <net name="A2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A2"/>
-<wire x1="58.42" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
-<label x="50.8" y="88.9" size="1.27" layer="95"/>
+<wire x1="50.8" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<label x="33.02" y="88.9" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -17088,8 +17104,8 @@ and do we want an RTC?</text>
 <net name="A3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A3"/>
-<wire x1="58.42" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
-<label x="50.8" y="86.36" size="1.27" layer="95"/>
+<wire x1="50.8" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
+<label x="33.02" y="86.36" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -17105,7 +17121,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A4"/>
-<wire x1="91.44" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
 <label x="99.06" y="86.36" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17117,7 +17133,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A5"/>
-<wire x1="91.44" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <label x="99.06" y="88.9" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17129,7 +17145,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A6"/>
-<wire x1="91.44" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
 <label x="99.06" y="91.44" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17141,7 +17157,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A7"/>
-<wire x1="91.44" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <label x="99.06" y="93.98" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17153,7 +17169,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A8"/>
-<wire x1="91.44" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <label x="99.06" y="96.52" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17165,7 +17181,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A9"/>
-<wire x1="91.44" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
 <label x="99.06" y="99.06" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17177,7 +17193,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A11"/>
-<wire x1="91.44" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
 <label x="99.06" y="101.6" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17189,7 +17205,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ8"/>
-<wire x1="91.44" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
 <label x="99.06" y="119.38" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17201,7 +17217,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ9"/>
-<wire x1="91.44" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
 <label x="99.06" y="124.46" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17213,7 +17229,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ10"/>
-<wire x1="91.44" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
 <label x="99.06" y="127" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17225,7 +17241,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ11"/>
-<wire x1="91.44" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
 <label x="99.06" y="132.08" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17237,7 +17253,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ12"/>
-<wire x1="91.44" y1="134.62" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="134.62" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
 <label x="99.06" y="134.62" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17249,7 +17265,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ13"/>
-<wire x1="91.44" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
 <label x="99.06" y="139.7" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17261,7 +17277,7 @@ and do we want an RTC?</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ15"/>
-<wire x1="91.44" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
 <label x="99.06" y="147.32" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -17345,7 +17361,7 @@ and do we want an RTC?</text>
 <net name="DQ14" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ14"/>
-<wire x1="91.44" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
 <label x="99.06" y="142.24" size="1.27" layer="95" rot="MR0"/>
 </segment>
 <segment>
@@ -17357,7 +17373,7 @@ and do we want an RTC?</text>
 <net name="CDCKE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="CKE"/>
-<wire x1="91.44" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
 <label x="99.06" y="106.68" size="1.27" layer="95" rot="MR0"/>
 </segment>
 <segment>
@@ -17369,7 +17385,7 @@ and do we want an RTC?</text>
 <net name="CDCK" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="CLK"/>
-<wire x1="91.44" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
 <label x="99.06" y="109.22" size="1.27" layer="95" rot="MR0"/>
 </segment>
 <segment>
@@ -17381,8 +17397,8 @@ and do we want an RTC?</text>
 <net name="SDWE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!WE"/>
-<wire x1="58.42" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
-<label x="50.8" y="111.76" size="1.27" layer="95"/>
+<wire x1="50.8" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<label x="33.02" y="111.76" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R36" gate="G$1" pin="1"/>
@@ -17393,8 +17409,8 @@ and do we want an RTC?</text>
 <net name="CAS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!CAS"/>
-<wire x1="58.42" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
-<label x="50.8" y="109.22" size="1.27" layer="95"/>
+<wire x1="50.8" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+<label x="33.02" y="109.22" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
@@ -17405,8 +17421,8 @@ and do we want an RTC?</text>
 <net name="RAS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!RAS"/>
-<wire x1="58.42" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
-<label x="50.8" y="106.68" size="1.27" layer="95"/>
+<wire x1="50.8" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="33.02" y="106.68" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
@@ -17417,8 +17433,8 @@ and do we want an RTC?</text>
 <net name="CDCS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!CS"/>
-<wire x1="58.42" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
-<label x="50.8" y="104.14" size="1.27" layer="95"/>
+<wire x1="50.8" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<label x="33.02" y="104.14" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -17429,8 +17445,8 @@ and do we want an RTC?</text>
 <net name="BA0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="BA0"/>
-<wire x1="58.42" y1="101.6" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
-<label x="50.8" y="101.6" size="1.27" layer="95"/>
+<wire x1="50.8" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="33.02" y="101.6" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R29" gate="G$1" pin="1"/>
@@ -17441,8 +17457,8 @@ and do we want an RTC?</text>
 <net name="BA1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="BA1"/>
-<wire x1="58.42" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
-<label x="50.8" y="99.06" size="1.27" layer="95"/>
+<wire x1="50.8" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="33.02" y="99.06" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
@@ -17453,8 +17469,8 @@ and do we want an RTC?</text>
 <net name="DQML" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQML"/>
-<wire x1="58.42" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
-<label x="50.8" y="114.3" size="1.27" layer="95"/>
+<wire x1="50.8" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<label x="33.02" y="114.3" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
@@ -17465,7 +17481,7 @@ and do we want an RTC?</text>
 <net name="DQMH" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQMH"/>
-<wire x1="91.44" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <label x="99.06" y="111.76" size="1.27" layer="95" rot="MR0"/>
 </segment>
 <segment>
@@ -17661,6 +17677,74 @@ and do we want an RTC?</text>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
 <label x="182.88" y="149.86" size="1.27" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VSSQ_1"/>
+<wire x1="50.8" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="137.16" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VSSQ_2"/>
+<wire x1="48.26" y1="121.92" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<junction x="48.26" y="121.92"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VSS_3"/>
+<wire x1="83.82" y1="149.86" x2="86.36" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="149.86" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VSS_1"/>
+<wire x1="86.36" y1="144.78" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="129.54" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="116.84" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="83.82" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<junction x="86.36" y="83.82"/>
+<pinref part="IC1" gate="G$1" pin="VSS_2"/>
+<wire x1="83.82" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<junction x="86.36" y="116.84"/>
+<pinref part="IC1" gate="G$1" pin="VSSQ_3"/>
+<wire x1="83.82" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+<junction x="86.36" y="129.54"/>
+<pinref part="IC1" gate="G$1" pin="VSSQ_4"/>
+<wire x1="83.82" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
+<junction x="86.36" y="144.78"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VDD_3"/>
+<wire x1="50.8" y1="83.82" x2="45.72" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="83.82" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VDD_1"/>
+<wire x1="45.72" y1="116.84" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="129.54" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="144.78" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="149.86" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<junction x="45.72" y="149.86"/>
+<pinref part="IC1" gate="G$1" pin="VDDQ_1"/>
+<wire x1="50.8" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+<junction x="45.72" y="144.78"/>
+<pinref part="IC1" gate="G$1" pin="VDDQ_2"/>
+<wire x1="50.8" y1="129.54" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
+<junction x="45.72" y="129.54"/>
+<pinref part="IC1" gate="G$1" pin="VDD_2"/>
+<wire x1="50.8" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
+<junction x="45.72" y="116.84"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VDDQ_4"/>
+<wire x1="83.82" y1="137.16" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="137.16" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VDDQ_3"/>
+<wire x1="83.82" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="121.92" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
+<junction x="88.9" y="137.16"/>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 </nets>
