@@ -9012,105 +9012,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit" urn="urn:adsk.eagle:library:420">
-<packages>
-<package name="1812" urn="urn:adsk.eagle:footprint:6239675/1" library_version="2">
-<description>Multilayer SMD</description>
-<wire x1="-2.3" y1="0" x2="2.4" y2="0" width="0.127" layer="51"/>
-<wire x1="-2.8004" y1="1.7113" x2="2.8004" y2="1.7113" width="0.127" layer="21"/>
-<wire x1="2.8004" y1="1.7113" x2="2.8004" y2="-1.7113" width="0.127" layer="51"/>
-<wire x1="2.8004" y1="-1.7113" x2="-2.8004" y2="-1.7113" width="0.127" layer="21"/>
-<wire x1="-2.8004" y1="-1.7113" x2="-2.8004" y2="1.7113" width="0.127" layer="51"/>
-<wire x1="-1.7" y1="0" x2="1.7" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.07" layer="21"/>
-<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.07" layer="51"/>
-<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.07" layer="21"/>
-<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.07" layer="51"/>
-<smd name="1" x="-2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
-<smd name="2" x="2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
-<text x="-1.8575" y="1.905" size="0.6096" layer="27">&gt;VALUE</text>
-<text x="-1.8575" y="-2.54" size="0.6096" layer="25">&gt;NAME</text>
-<rectangle x1="-0.9" y1="-0.3" x2="0.9" y2="0.3" layer="21"/>
-<rectangle x1="-0.6" y1="-0.3" x2="0.5" y2="0.3" layer="21"/>
-</package>
-<package name="R1206" urn="urn:adsk.eagle:footprint:6239923/1" library_version="2">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.397" y="1.143" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
-<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="1812" urn="urn:adsk.eagle:package:6240348/1" type="box" library_version="2">
-<description>Multilayer SMD</description>
-<packageinstances>
-<packageinstance name="1812"/>
-</packageinstances>
-</package3d>
-<package3d name="R1206" urn="urn:adsk.eagle:package:6240569/1" type="box" library_version="2">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<packageinstances>
-<packageinstance name="R1206"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="FUSE" urn="urn:adsk.eagle:symbol:6239571/1" library_version="2">
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-126.869898"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
-<text x="-3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PTCFUSE" urn="urn:adsk.eagle:component:6241062/1" prefix="F" uservalue="yes" library_version="2">
-<description>PTC fuses, resettable thermistors</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="-1812" package="1812">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240348/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1206" package="R1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240569/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SamacSys Managed" urn="urn:adsk.eagle:library:14185959">
 <packages>
 <package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:14185983/1" library_version="8">
@@ -9199,40 +9100,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <attribute name="MOUSER_PART_NUMBER" value="579-ATA6561-GAQW-N" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=579-ATA6561-GAQW-N" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="Wire Pads">
-<packages>
-<package name="12AWG-STRANDED">
-<pad name="P$1" x="0" y="0" drill="2.6416" diameter="3.9624"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TP">
-<wire x1="-0.762" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-0.762" x2="0" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.524" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<text x="-1.27" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="WIRE-PAD">
-<gates>
-<gate name="G$1" symbol="TP" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="12AWG-STRANDED">
-<connects>
-<connect gate="G$1" pin="TP" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9568,16 +9435,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <part name="J1" library="BergStak" library_urn="urn:adsk.eagle:library:14049968" deviceset="10144517-04" device="2802LF" package3d_urn="urn:adsk.eagle:package:14050087/4"/>
 <part name="J2" library="BergStak" library_urn="urn:adsk.eagle:library:14049968" deviceset="10144518-04" device="1802LF" package3d_urn="urn:adsk.eagle:package:14050130/2"/>
 <part name="U$12" library="Supply" deviceset="SHIELD" device=""/>
-<part name="U$9" library="Wire Pads" deviceset="WIRE-PAD" device=""/>
-<part name="U$13" library="Wire Pads" deviceset="WIRE-PAD" device=""/>
-<part name="F1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PTCFUSE" device="-1206" package3d_urn="urn:adsk.eagle:package:6240569/1"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
 <part name="U$14" library="Supply" deviceset="SHIELD" device=""/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="120 DNP"/>
 <part name="U$25" library="Supply" deviceset="PGND" device=""/>
 <part name="U$26" library="Supply" deviceset="PGND" device=""/>
 <part name="U$27" library="Supply" deviceset="DGND" device=""/>
-<part name="U$28" library="Supply" deviceset="PGND" device=""/>
 <part name="U$29" library="Supply" deviceset="DGND" device=""/>
 <part name="U$30" library="Supply" deviceset="DGND" device=""/>
 <part name="U$31" library="Supply" deviceset="DGND" device=""/>
@@ -9659,16 +9522,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <instance part="U$12" gate="A" x="20.32" y="71.12" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="22.86" y="68.58" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="U$9" gate="G$1" x="22.86" y="12.7" smashed="yes">
-<attribute name="NAME" x="21.59" y="13.97" size="1.778" layer="95"/>
-</instance>
-<instance part="U$13" gate="G$1" x="22.86" y="22.86" smashed="yes">
-<attribute name="NAME" x="21.59" y="24.13" size="1.778" layer="95"/>
-</instance>
-<instance part="F1" gate="G$1" x="33.02" y="15.24" smashed="yes">
-<attribute name="VALUE" x="29.21" y="13.97" size="1.778" layer="96"/>
-<attribute name="NAME" x="29.21" y="20.32" size="1.778" layer="95"/>
-</instance>
 <instance part="R8" gate="G$1" x="228.6" y="63.5" smashed="yes">
 <attribute name="NAME" x="224.79" y="64.9986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="224.79" y="60.198" size="1.778" layer="96"/>
@@ -9679,9 +9532,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <instance part="R26" gate="G$1" x="25.4" y="48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="23.9014" y="44.45" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="28.702" y="44.45" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="U$28" gate="G$1" x="22.86" y="7.62" smashed="yes">
-<attribute name="VALUE" x="20.32" y="5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="U$29" gate="G$1" x="93.98" y="33.02" smashed="yes">
 <attribute name="VALUE" x="91.44" y="30.48" size="1.778" layer="96"/>
@@ -10081,13 +9931,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <pinref part="J4" gate="A" pin="15"/>
 </segment>
 </net>
-<net name="+V_BAT_INT" class="0">
-<segment>
-<label x="50.8" y="17.78" size="1.27" layer="95" xref="yes"/>
-<wire x1="38.1" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="P_GOOD" class="0">
 <segment>
 <pinref part="J4" gate="A" pin="39"/>
@@ -10098,14 +9941,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 <wire x1="238.76" y1="147.32" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
 <label x="228.6" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="A" pin="39"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U$13" gate="G$1" pin="TP"/>
-<wire x1="22.86" y1="20.32" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFU_37" class="0">
@@ -10289,10 +10124,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ATA6561-GAQW-
 </segment>
 </net>
 <net name="PGND" class="0">
-<segment>
-<pinref part="U$9" gate="G$1" pin="TP"/>
-<pinref part="U$28" gate="G$1" pin="PGND"/>
-</segment>
 <segment>
 <pinref part="J3" gate="A" pin="2"/>
 <wire x1="246.38" y1="195.58" x2="256.54" y2="195.58" width="0.1524" layer="91"/>
