@@ -1,0 +1,3 @@
+[submodule "Hardware/lib/Altium-libs-Shared"]
+	path = Hardware/lib/Altium-libs-Shared
+	url = https://github.com/ericsims/Altium-libs
