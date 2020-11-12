@@ -29,7 +29,7 @@ PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 ForceUpdateCount=0
-OutputPath=Outputs
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -114,7 +114,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -142,72 +142,40 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Sources\Outputs\NC Drill\DBG-040.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Sources\Outputs\Gerber\DBG-040.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument3]
-DocumentPath=Sources\Outputs\DRC\DBG-040.html
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Sources\Outputs\ERC\DBG-040.html
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Sources\Outputs\NC Drill\DBG-040.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
+[GeneratedDocument2]
 DocumentPath=Sources\Outputs\Gerber\DBG-040.REP
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument3]
 DocumentPath=Sources\Outputs\Gerber\DBG-040.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument4]
 DocumentPath=Sources\Outputs\ExportSTEP\DBG-040.step
 DItemRevisionGUID=
 
-[GeneratedDocument9]
-DocumentPath=Sources\Outputs\NC Drill\DBG-040.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Sources\Outputs\Pick Place\Pick Place for DBG-040.txt
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Outputs\Sheet1.html
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Outputs\Sheet1.REP
-DItemRevisionGUID=
-
 [Parameter1]
+Name=DocumentNumber
+Value=DBG-040
+
+[Parameter2]
 Name=Organization
 Value=Let's Build Rockets Inc.
 
-[Parameter2]
-Name=SheetTotal
-Value=1
-
 [Parameter3]
-Name=Title
-Value=Spacer Board
-
-[Parameter4]
 Name=Revision
 Value=A.1
 
+[Parameter4]
+Name=SheetTotal
+Value=1
+
 [Parameter5]
-Name=DocumentNumber
-Value=DBG-040
+Name=Title
+Value=Spacer Board
 
 [Configuration1]
 Name=Sources
@@ -222,7 +190,7 @@ DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=DBG-040.OutJob
 
 [Generic_EDE]
-OutputDir=Outputs
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
