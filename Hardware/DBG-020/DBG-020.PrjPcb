@@ -125,7 +125,7 @@ GenerateClassCluster=0
 DocumentUniqueId=XYJWXLRQ
 
 [Document6]
-DocumentPath=DBG-010.CSPcbDoc
+DocumentPath=DBG-020.CSPcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -143,11 +143,11 @@ DocumentUniqueId=UWTXAXSE
 
 [Parameter1]
 Name=Title
-Value=Development/Debug Board
+Value=Bus Current Sense Board
 
 [Parameter2]
 Name=SheetTotal
-Value=1
+Value=2
 
 [Parameter3]
 Name=Revision
@@ -159,7 +159,7 @@ Value=Let's Build Rockets Inc.
 
 [Parameter5]
 Name=DocumentNumber
-Value=DBG-010
+Value=DBG-020
 
 [Configuration1]
 Name=Sources
