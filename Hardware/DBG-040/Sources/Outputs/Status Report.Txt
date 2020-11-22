@@ -1,0 +1,16 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 9:50:38 PM On 11/2/2020
+
+Output: Gerber
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [DBG-040.CSPcbDoc]
+   Generated File[DBG-040.RUL]
+   Generated File[DBG-040.EXTREP]
+   Generated File[DBG-040.REP]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 9:50:38 PM On 11/2/2020
