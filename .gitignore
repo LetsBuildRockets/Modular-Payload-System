@@ -10,9 +10,14 @@
 *.fft
 *.log
 *.fft
+*.net
+*.plt
+*.txt
+
+#Jupyter
+.ipynb_checkpoints
 
 # Altium
-
 History/
 OldVersions/
 __Previews/
