@@ -103,7 +103,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=MHSYEKUL
 
 [Document5]
 DocumentPath=..\..\lib\ModularPayload.SchLib
@@ -343,25 +343,127 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IPNGSUHX
 
+[Document19]
+DocumentPath=Sheet5.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=4
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SEEMVNLY
+
+[Document20]
+DocumentPath=PS-010 Main.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UWTXAXSE
+
+[Document21]
+DocumentPath=..\..\lib\Altium-libs-Shared\KEMET.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XPARBRQV
+
+[Document22]
+DocumentPath=..\..\lib\Altium-libs-Shared\TP.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document23]
+DocumentPath=..\..\lib\Altium-libs-Shared\TP.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document24]
+DocumentPath=..\..\lib\Altium-libs-Shared\KEMET.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=DUGBOFTJ
+
 [Parameter1]
-Name=Title
-Value=Power Supply Board (Main)
+Name=DocumentNumber
+Value=PS-010_Main
 
 [Parameter2]
-Name=SheetTotal
-Value=*
+Name=Organization
+Value=Let's Build Rockets Inc.
 
 [Parameter3]
 Name=Revision
 Value=A.1
 
 [Parameter4]
-Name=Organization
-Value=Let's Build Rockets Inc.
+Name=SheetTotal
+Value=
 
 [Parameter5]
-Name=DocumentNumber
-Value=PS-010_Main
+Name=Title
+Value=Power Supply Board (Main)
 
 [Configuration1]
 Name=Sources
@@ -988,9 +1090,9 @@ Type30=1
 Type31=1
 Type32=1
 Type33=1
-Type34=1
-Type35=1
-Type36=1
+Type34=0
+Type35=0
+Type36=0
 Type37=1
 Type38=1
 Type39=1
