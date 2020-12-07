@@ -21,6 +21,8 @@
 History/
 OldVersions/
 __Previews/
+*.PrjPcbStructure
+
 *desktop.ini
 *.~lock*
 lockfile.lck
