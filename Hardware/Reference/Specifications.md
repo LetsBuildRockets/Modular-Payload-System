@@ -60,17 +60,20 @@ These specifications are split into two categories, General Requirements that al
                 1. +VBAT rail shall be 12.8VDC to 34VDC
                 2. +VBAT rail steady state current shall be no more than 7.6A
                 3. Total +VBAT rail transient current shall be < 1.5x max rated current of 7.6A =  11.4A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
-                4. All modules that generate the +VBAT rail via switching regulator topologies shall be 100% tested to ensure conformance to operating voltage requirement. This requirement does not apply to modules that generate the +VBAT rail only from a battery with no power path components that will significantly cause a drop (or increase) in rail voltage.
+                4. Rise time shall be no faster than **TBD** V/s
+                5. All modules that generate the +VBAT rail via switching regulator topologies shall be 100% tested to ensure conformance to operating voltage requirement. This requirement does not apply to modules that generate the +VBAT rail only from a battery with no power path components that will significantly cause a drop (or increase) in rail voltage.
              2. +12V Rail
                       1. +12V rail shall be 11.2VDC to 12.6VDC
                       2. +12V rail steady state current shall be no more than 4A
                       3. Total +12V rail transient current shall be < 1.5x max rated current of 4A =  6A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
-                      4. All modules capable of generating the +12V rail shall be 100% tested to ensure conformance to operating voltage requirement 
+                      4. Rise time shall be no faster than **TBD** V/s
+                      5. All modules capable of generating the +12V rail shall be 100% tested to ensure conformance to operating voltage requirement 
              3. +5V Rail
                       1. +5V rail shall be 4.85V to 5.25V
                       2. +5V rail steady state current shall be no more than 3.2A
                       3. Total +5V rail transient current shall be < 1.5x max rated current of 3.2A =  4.8A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
-                      4. All modules capable of generating the +5V rail shall be 100% tested to ensure conformance to operating voltage requirement
+                      4. Rise time shall be no faster than **TBD** V/s
+                      5. All modules capable of generating the +5V rail shall be 100% tested to ensure conformance to operating voltage requirement
              4. +VBAT_Preboot
                       1. TBD
              5. +5V_Preboot
@@ -92,7 +95,9 @@ These specifications are split into two categories, General Requirements that al
                          1. TBD
                 7. EN_2
                          1. TBD
-                8. P_GOOD
+                8. Detect_A/Detect_B
+                         1. TBD
+                9. P_GOOD
                          1. **Intended Use** The P_GOOD signal is intended to be to power on reset signal for the bus. It can be used to enable local 3.3V LDOs or tied to the rest pin of a microcontroller. This allows the power supplies to come up, then assert the P_GOOD signal in order to enable the rest of the modules.
                          2. The P_GOOD signal shall be asserted to 3.3V (2.2V min. - 3.6V max.) after VBAT, 12V, and 5V rails have reached operating voltage
                          3. The P_GOOD signal shall be de-asserted if any of the rails fall below operating range after ~1ms of persistence
@@ -101,13 +106,38 @@ These specifications are split into two categories, General Requirements that al
    2. Mechanical
 
          1. Connectors
+
+               1. TBD
+
          2. Component Height
+
+               1. Component height limits on the top side of the board are defined by the stacking connectors they are as follows
+
+                  |     Connector PN      | Component Height limit |
+                  | :-------------------: | :--------------------: |
+                  | 10144517-06**1**802LF |        152 mil         |
+                  | 10144517-06**2**802LF |        310 mil         |
+                  | 10144517-06**3**802LF |        467 mil         |
+                  | 10144517-06**4**802LF |         625 mi         |
+
+            2.  Component height limit on the bottom side of the board is 152 mil
+
          3. Board Outline
+
+               1. TBD
+
          4. Mounting Holes
+
+               1. TBD
+
          5. Board thickness
+
+               1. TBD
+
          6. Test Points
+
                1. SMT test points should be at least 40mil in diameter
-               2. SMT test points should be located on a 0.1” grid on the board. Per TBD drawing. (This allows for a standardized pogo pin test board that picks up on this grid. Save from having to create a pogo pin board for each module)
+               2. SMT test points should be located on a 0.1” grid on the board. Per **TBD** drawing. (This allows for a standardized pogo pin test board that picks up on this grid. Save from having to create a pogo pin board for each module)
                3. SMT test points should be prioritized to be on top side of the board
 
 ## High Reliability Specifications
