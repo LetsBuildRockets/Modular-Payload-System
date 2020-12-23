@@ -124,15 +124,15 @@ These specifications are split into two categories, General Requirements that al
 
          3. Board Outline
 
-               1. TBD
+               1. Modules should be 1.750" by 1.750" with a 0.125" radius on the corners (This specification may be violated and should be evaluated on a case by case basis.)
 
          4. Mounting Holes
 
-               1. TBD
+               1. Modules shall have mounting holes sized for M3 standoffs (126mil nom. drill diameter with a 218mil nom. pad diameter) located at 0.125" from the edge of the 1.75" square
 
          5. Board thickness
 
-               1. TBD
+               1. Module PCBs should be 63mil nom. thickness. (This allows for the use of standard standoffs for module stacking. This specification may be violated if alterative standoffs are used)
 
          6. Test Points
 
