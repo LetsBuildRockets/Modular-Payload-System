@@ -113,28 +113,38 @@ These specifications are split into two categories, General Requirements that al
 
                1. Component height limits on the top side of the board are defined by the stacking connectors they are as follows
 
-                  |     Connector PN      | Component Height limit |
-                  | :-------------------: | :--------------------: |
-                  | 10144517-06**1**802LF |        152 mil         |
-                  | 10144517-06**2**802LF |        310 mil         |
-                  | 10144517-06**3**802LF |        467 mil         |
-                  | 10144517-06**4**802LF |         625 mi         |
+                  |     Connector PN      | Top Side Component Height limit |
+                  | :-------------------: | :-----------------------------: |
+                  | 10144517-06**1**802LF |             152 mil             |
+                  | 10144517-06**2**802LF |             310 mil             |
+                  | 10144517-06**3**802LF |             467 mil             |
+                  | 10144517-06**4**802LF |             625 mi              |
 
             2.  Component height limit on the bottom side of the board is 152 mil
 
-         3. Board Outline
+      3. Stack Height
+
+         1. Module to Module stack heights are defined by the top side connector. This stack height is defined by the top side of one module to the bottom side of the module above it.
+              |     Connector PN      | Stack Height | Recommended Standoff |
+              | :-------------------: | :----------: | :------------------: |
+              | 10144517-06**1**802LF |     8 mm     |    M2103-3005-SS     |
+              | 10144517-06**2**802LF |    12 mm     |    M2107-3005-SS     |
+              | 10144517-06**3**802LF |    16 mm     |    M2111-3005-SS     |
+              | 10144517-06**4**802LF |    20 mm     |    M2115-3005-SS     |
+
+         4. Board Outline
 
                1. Modules should be 1.750" by 1.750" with a 0.125" radius on the corners (This specification may be violated and should be evaluated on a case by case basis.)
 
-         4. Mounting Holes
+         5. Mounting Holes
 
                1. Modules shall have mounting holes sized for M3 standoffs (126mil nom. drill diameter with a 218mil nom. pad diameter) located at 0.125" from the edge of the 1.75" square
 
-         5. Board thickness
+         6. Board thickness
 
-               1. Module PCBs should be 63mil nom. thickness. (This allows for the use of standard standoffs for module stacking. This specification may be violated if alterative standoffs are used)
+               1. Module PCBs should be 63mil nom. thickness. (This allows for the use of standard standoffs for module stacking. This specification may be violated if alternate standoffs are used)
 
-         6. Test Points
+         7. Test Points
 
                1. SMT test points should be at least 40mil in diameter
                2. SMT test points should be located on a 0.1” grid on the board. Per **TBD** drawing. (This allows for a standardized pogo pin test board that picks up on this grid. Save from having to create a pogo pin board for each module)
