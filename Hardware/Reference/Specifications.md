@@ -4,6 +4,25 @@ Revision: Draft
 ## Overview
 These specifications are split into two categories, General Requirements that all module developers shall follow, and a following section that pertains only to modules that meet the High Reliability Requirements (HR)
 
+## Naming Conventions
+
+Bus modules have a basic naming scheme in the format XXX-NNM PSU-010. The prefix letters define the type of module. The two numbers NN define the board number. The last number M, defines the assembly variant. 
+
+| Prefix | Type                                                         |
+| :----: | :----------------------------------------------------------- |
+|  PSU   | Power Supply Module. Should also be used for power related modules, if for example, you needed to power external devices from the BUS rails. |
+|  DBG   | Debug/Development Module                                     |
+|  TOP   | Top Module. Design to terminate the top of the stack.        |
+|  BOT   | Bottom Module. Design to terminate the bottom of the stack.  |
+|  CPU   | Flight Computer Module                                       |
+|   IO   | IO board. Includes modules for driving relays, pyros, etc.   |
+|  BAT   | Battery Module. This is any module that generates the +VBAT rail. |
+|  AUX   | Auxiliary Modules for doing *weird* stuff.                   |
+|  TMP   | Template Modules                                             |
+|        |                                                              |
+
+
+
 ## General Specifications
 1. Performance
 
@@ -62,23 +81,23 @@ These specifications are split into two categories, General Requirements that al
                 3. Total +VBAT rail transient current shall be < 1.5x max rated current of 7.6A =  11.4A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
                 4. Rise time shall be no faster than **TBD** V/s
                 5. All modules that generate the +VBAT rail via switching regulator topologies shall be 100% tested to ensure conformance to operating voltage requirement. This requirement does not apply to modules that generate the +VBAT rail only from a battery with no power path components that will significantly cause a drop (or increase) in rail voltage.
-             2. +12V Rail
+                   2. +12V Rail
                       1. +12V rail shall be 11.2VDC to 12.6VDC
                       2. +12V rail steady state current shall be no more than 4A
                       3. Total +12V rail transient current shall be < 1.5x max rated current of 4A =  6A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
                       4. Rise time shall be no faster than **TBD** V/s
                       5. All modules capable of generating the +12V rail shall be 100% tested to ensure conformance to operating voltage requirement 
-             3. +5V Rail
+                   3. +5V Rail
                       1. +5V rail shall be 4.85V to 5.25V
                       2. +5V rail steady state current shall be no more than 3.2A
                       3. Total +5V rail transient current shall be < 1.5x max rated current of 3.2A =  4.8A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
                       4. Rise time shall be no faster than **TBD** V/s
                       5. All modules capable of generating the +5V rail shall be 100% tested to ensure conformance to operating voltage requirement
-             4. +VBAT_Preboot
+                   4. +VBAT_Preboot
                       1. TBD
-             5. +5V_Preboot
+                   5. +5V_Preboot
                       1. TBD
-             6. +5V_Bootstrap
+                   6. +5V_Bootstrap
                       1. TBD
       12. BUS Signals
                 1. CAN0
@@ -159,4 +178,3 @@ These specifications are split into two categories, General Requirements that al
    4. Linear regulators shall have a phase margin of 35 degrees or greater
    5. Linear regulators shall have stability performance verified by test at nominal load.
    6. All ICs and discrete electrical components shall be analyzed to ensure TJ MAX is not exceeded under max load.
-
