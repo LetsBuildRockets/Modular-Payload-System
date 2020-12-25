@@ -4,7 +4,7 @@
 
 - Initial Release
 
-## B.1
+## B
 
 - Changed from Circuit studio to Altium
 - Changed naming from TMP-001 to TMP-010, where first two digits represent the board number, and the last is the assembly variant
