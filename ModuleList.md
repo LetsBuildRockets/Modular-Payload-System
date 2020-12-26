@@ -13,3 +13,4 @@
 | PS-010 | A (draft) | [datasheet](https://github.com/LetsBuildRockets/Modular-Payload-System/blob/master/Hardware/PS-010/docs/datasheet.md) | 
 | TMP-010 | [B](https://github.com/LetsBuildRockets/Modular-Payload-System/releases/tag/TMP-010-B) | - | 
 
+This file was autogenereated with /Scripts/generate-module-list.py on 12/25/2020 17:29:28

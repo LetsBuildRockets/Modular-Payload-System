@@ -2,6 +2,8 @@ from os import listdir
 from os.path import isfile, join
 from urllib.request import urlopen
 import json
+from datetime import datetime
+
 
 hardwareIgnoreList = ['Reference', 'lib']
 moduleNames = listdir('./Hardware')
@@ -83,6 +85,8 @@ with open('./ModuleList.md', "r+") as f:
     f.seek(0)
     f.write('# Module List')
     f.write(make_markdown_table(moduleList))
+    f.write('')
+    f.write('This file was autogenereated with /Scripts/generate-module-list.py on ' + datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
     f.truncate()
     
         
