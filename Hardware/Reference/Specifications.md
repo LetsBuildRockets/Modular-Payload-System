@@ -189,4 +189,4 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
 ### Figure 1
 **DETECT_A/DETECT_B Configuration**
 
-![Detect Behavior](Images/Detect Behavior.png)
+![Detect Behavior](images/Detect_Behavior.png)
