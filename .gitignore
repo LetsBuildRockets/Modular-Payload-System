@@ -17,6 +17,9 @@
 #Jupyter
 .ipynb_checkpoints
 
+# Template Files
+XXX-NNM Compliance Matrix.csv
+
 # Altium
 History/
 OldVersions/
