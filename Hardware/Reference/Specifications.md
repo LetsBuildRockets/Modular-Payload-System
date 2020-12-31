@@ -79,8 +79,14 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
           1. TBD
        7. EN_2
           1. TBD
-       8. Detect_A/Detect_B
-          1. TBD
+       8. DETECT_A/DETECT_B
+          1. Reference: The DETECT_A and DETECT_B signals are used to autodetect the order of the Modules within a stack. This is the only signal in the bus that is not connected to all of the modules in parallel to P1 and J1. DETECT_A is only present on P1 while DETECT_B is only present on J1. DETECT_B should be configured as an input to the microcontroller with a pullup (external or internal to the microcontroller ) When this net is pulled low, the Module should identify itself on the CAN bus. The module will then drive DETECT_A low to request the next module in the stack to identify itself. The bottom board in the stack ties detect to GND to start the detect process. It is recommended that all Modules that have a microcontroller use this detect feature. See [Figure 1](###Figure 1) for an example of how this detect signal could be wired up between modules.
+          2. If the detect signal is used in the Module, the detect net tied to J1 (top side connector) shall be called DETECT_A and the detect net tied to P1 (bottom side connector) shall be called DETECT_B.
+          3. If the detect signal is used in the Module, DETECT_B shall be configured as an input with a pullup resistor between 2kohm and 500kohm.
+          4. If the detect signal is used in the Module, DETECT_A shall be configured as an open collector/drain output. It shall remain in a hi-z or pullup state until the module has finished its detect sequence, at which time it will drive the DETECT_A net low.
+          5. If the detect signal is not used in the Module, The net shall tie J1 to P1 and shall be called Detect.
+          6. Bottom modules (BOT-NNM) shall tie DETECT_A to GND.
+          7. Top modules (TOP-NNM) shall leave DETECT_B floating.
        9. P_GOOD
           1. Reference: The P_GOOD signal is intended to be to power on reset signal for the bus. It can be used to enable local 3.3V LDOs or tied to the rest pin of a microcontroller. This allows the power supplies to come up, then assert the P_GOOD signal in order to enable the rest of the modules. The P_GOOD net is driven through a 220ohm series resistor and a Schottky diode and has a 100kohm pulldown. The goal of the current requirement on this net is to keep the P_GOOD rail from sagging excessively under load. Pulldowns on every module and the Iq of any enable pin may quickly exceed the expected current on this net. The exception the current requirements is reset buttons or other reset features. P_GOOD can be tied low which will draw ~10mA, which will hold the modules in reset.
           2. The P_GOOD signal shall be asserted to 3.3V (2.2V min. 3.6V max.) after VBAT, 12V, and 5V rails have reached operating voltage
@@ -100,7 +106,7 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
           1. Component height limits on the top side of the board are defined by the stacking connectors. See [Table 2](###Table 2)    
           2. Component height limit on the bottom side of the board is 152 mil     
     3. Stack Height
-            1. Reference: Module to Module stack heights are defined by the top side connector. This stack height is defined by the top side of one module to the bottom side of the module above it. i.e. not including board thickness. See  [Table 3](###Table 3)
+          4. Reference: Module to Module stack heights are defined by the top side connector. This stack height is defined by the top side of one module to the bottom side of the module above it. i.e. not including board thickness. See  [Table 3](###Table 3)
     5. Board Outline
           1. Modules should be 1.750" by 1.750" with a 0.125" radius on the corners (This specification may be violated and should be evaluated on a case by case basis.)
     6. Mounting Holes
@@ -122,7 +128,7 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
    5. Linear regulators shall have stability performance verified by test at nominal load.
    6. All ICs and discrete electrical components shall be analyzed to ensure TJ MAX is not exceeded under max load.
 
-## Tables
+## Tables/Figures
 ### Table 1
 **GPS Frequency Keep outs**
 
@@ -179,3 +185,8 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
 | 10144517-06**2**802LF |    12 mm     |    M2107-3005-SS     |
 | 10144517-06**3**802LF |    16 mm     |    M2111-3005-SS     |
 | 10144517-06**4**802LF |    20 mm     |    M2115-3005-SS     |
+
+### Figure 1
+**DETECT_A/DETECT_B Configuration**
+
+![Detect Behavior](.\Images\Detect Behavior.png)
