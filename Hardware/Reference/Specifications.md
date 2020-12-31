@@ -36,7 +36,7 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
    6. All passive electrical components shall be AEC-Q200 qualified
    7. All discrete components shall be AEC-Q101 qualified
    8. All IC should be AEC-Q100 qualified. If the IC is not AEC-Q100 qualified, then it should have a pin compatible/orderable part that is AEC-Q100 qualified. (The goal here is that if the user wants to pay the extra or jump through the purchasing hurdles to actually get an AEC-Q100 part then they can, but it should be the same. For example the ATSAMC21 that is planned for this project has a AEC-Q100 qualified PN suffix, but they are non-stock. We would have to order a full reel. But by using this part, we have the option to simply order the AEC-Q100 part in the future if needed.)
-   9. When digital communication and clocks greater than 25.575Mhz are used, the frequency should be chosen such that there are no odd harmonics in the L1 GPS band (1575.42 MHz ± 15.345 MHz). Digital frequencies keep out table included for reference below. For example, clock frequencies of 48MHz are not allow because they are between 47.275MHz and 48.205MHz and will produce a 33rd harmonic in the L1 GPS band. 48.25MHz, for example is allowed. If frequencies are used that are in the frequency keep out regions, shielding options should be evaluated in order to prevent interference with GPS receivers. If an applications uses GPS other than L1, a frequency keep out table should be made by dividing the the upper and lower bandwidth limits of the band by odd divisors. See [Table 1](###Table 1)
+   9. When digital communication and clocks greater than 25.575Mhz are used, the frequency should be chosen such that there are no odd harmonics in the L1 GPS band (1575.42 MHz ± 15.345 MHz). Digital frequencies keep out table included for reference below. For example, clock frequencies of 48MHz are not allow because they are between 47.275MHz and 48.205MHz and will produce a 33rd harmonic in the L1 GPS band. 48.25MHz, for example is allowed. If frequencies are used that are in the frequency keep out regions, shielding options should be evaluated in order to prevent interference with GPS receivers. If an applications uses GPS other than L1, a frequency keep out table should be made by dividing the the upper and lower bandwidth limits of the band by odd divisors. See [Table 1](#table-1)
    10. Pinout
        1. TBD
    11. BUS Power
@@ -80,7 +80,7 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
        7. EN_2
           1. TBD
        8. DETECT_A/DETECT_B
-          1. Reference: The DETECT_A and DETECT_B signals are used to autodetect the order of the Modules within a stack. This is the only signal in the bus that is not connected to all of the modules in parallel to P1 and J1. DETECT_A is only present on P1 while DETECT_B is only present on J1. DETECT_B should be configured as an input to the microcontroller with a pullup (external or internal to the microcontroller ) When this net is pulled low, the Module should identify itself on the CAN bus. The module will then drive DETECT_A low to request the next module in the stack to identify itself. The bottom board in the stack ties detect to GND to start the detect process. It is recommended that all Modules that have a microcontroller use this detect feature. See [Figure 1](###Figure 1) for an example of how this detect signal could be wired up between modules.
+          1. Reference: The DETECT_A and DETECT_B signals are used to autodetect the order of the Modules within a stack. This is the only signal in the bus that is not connected to all of the modules in parallel to P1 and J1. DETECT_A is only present on P1 while DETECT_B is only present on J1. DETECT_B should be configured as an input to the microcontroller with a pullup (external or internal to the microcontroller ) When this net is pulled low, the Module should identify itself on the CAN bus. The module will then drive DETECT_A low to request the next module in the stack to identify itself. The bottom board in the stack ties detect to GND to start the detect process. It is recommended that all Modules that have a microcontroller use this detect feature. See [Figure 1](#figure-1) for an example of how this detect signal could be wired up between modules.
           2. If the detect signal is used in the Module, the detect net tied to J1 (top side connector) shall be called DETECT_A and the detect net tied to P1 (bottom side connector) shall be called DETECT_B.
           3. If the detect signal is used in the Module, DETECT_B shall be configured as an input with a pullup resistor between 2kohm and 500kohm.
           4. If the detect signal is used in the Module, DETECT_A shall be configured as an open collector/drain output. It shall remain in a hi-z or pullup state until the module has finished its detect sequence, at which time it will drive the DETECT_A net low.
@@ -103,10 +103,10 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
         6. If the Module uses SWD or JTAG for programming, a standard 2x5 0.05" pitch right angle box header should be used as a programming connector. This allows for consistency between modules.
         7. If the Module uses a debug UART, a S4B-ZR(LF)(SN) should be used as a debug UART connector (pin 1: +3.3V, pin 2: GND, pin 3: DEBUG_TX, pin 4: DEBUG_RX). This allows for consistency between modules.
     2. Component Height
-          1. Component height limits on the top side of the board are defined by the stacking connectors. See [Table 2](###Table 2)    
+          1. Component height limits on the top side of the board are defined by the stacking connectors. See [Table 2](#table-2)
           2. Component height limit on the bottom side of the board is 152 mil     
     3. Stack Height
-          4. Reference: Module to Module stack heights are defined by the top side connector. This stack height is defined by the top side of one module to the bottom side of the module above it. i.e. not including board thickness. See  [Table 3](###Table 3)
+          4. Reference: Module to Module stack heights are defined by the top side connector. This stack height is defined by the top side of one module to the bottom side of the module above it. i.e. not including board thickness. See  [Table 3](#table-3)
     5. Board Outline
           1. Modules should be 1.750" by 1.750" with a 0.125" radius on the corners (This specification may be violated and should be evaluated on a case by case basis.)
     6. Mounting Holes
@@ -189,4 +189,4 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
 ### Figure 1
 **DETECT_A/DETECT_B Configuration**
 
-![Detect Behavior](.\Images\Detect Behavior.png)
+![Detect Behavior](Images/Detect Behavior.png)
