@@ -107,7 +107,7 @@ for module in modules:
     if len(module.assemblies) > 0 :
         #module.number = module.number + '<br/>' + 'Assemblies:'
         for assem in module.assemblies:
-            module.number = module.number + '<br/>    ' + assem
+            module.number = module.number + '<br/>-   ' + assem
         
     moduleList.append([module.number,module.revision,module.datasheet])
 
