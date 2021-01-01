@@ -29,10 +29,10 @@ def printter(outp,dicc,lvl=0,prefix=''):
         count+=1
     
 
-with open('../Hardware/Reference/Specifications.md', 'r', encoding="utf8") as fin:
+with open('./Hardware/Reference/Specifications.md', 'r', encoding="utf8") as fin:
     rendered = mistletoe.markdown(fin)
     soup = BeautifulSoup(rendered,features="lxml")
-    with open('../XXX-NNM Compliance Matrix.csv', 'w+', encoding="utf8") as outp:
+    with open('./XXX-NNM Compliance Matrix.csv', 'w+', encoding="utf8") as outp:
         outp.seek(0)
         outp.write("\"Number\",\"Requirement\",\"Compliant\",\"Method\",\"Comment\"\n")
         printter(outp,dictify(soup.body.ol))

@@ -2,7 +2,7 @@
 
 This repo uses submodules. Be sure to clone the submodules as well as the repo:
 
-```bash
+```sh
 git clone https://github.com/LetsBuildRockets/Modular-Payload-System/
 cd Modular-Payload-System
 git submodule update --init --recursive
