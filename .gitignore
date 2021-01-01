@@ -26,6 +26,9 @@ OldVersions/
 __Previews/
 *.PrjPcbStructure
 *.Annotation
+*.REP
+*.TLT
+*.Dat
 
 *desktop.ini
 *.~lock*
