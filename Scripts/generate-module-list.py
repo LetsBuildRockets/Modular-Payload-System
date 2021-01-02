@@ -49,15 +49,15 @@ for modulename in moduleNames:
                 start = variantLoc
                 paracount = int(PrjPcb[start+4][15:])
                 end = linebrLocs[next(end for end, linenum in enumerate(linebrLocs) if linenum > start)+paracount]
-                print('Variant: ', variantNum)
+                #print('Variant: ', variantNum)
                 for line in PrjPcb[start:end]:
                     #print(line)
                     if line.lower().startswith('description='):
                         module.assemblies.append(line[12:].rstrip())
-                        print(line[12:].rstrip())
+                        #print(line[12:].rstrip())
                 if 'name=variantlongdescription' in [x.lower().rstrip() for x in PrjPcb[start:end]]:
                     module.assemblies[-1] = module.assemblies[-1]+' - '+(PrjPcb[start:end][[x.lower().rstrip() for x in PrjPcb[start:end]].index('name=variantlongdescription')+1][6:]).rstrip()
-                print()
+                #print()
                 
                         
     datasheetpath = PrjPcbPath = './Hardware/'+modulename+'/docs/datasheet.md'
