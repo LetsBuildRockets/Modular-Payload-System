@@ -17,3 +17,16 @@
 
 ## Configurations
 ### CPU-011
+
+## Design Notes
+### Power Consumption
+
+| Device |        PN         |         Min.         |  Typ.   | Max.  |
+| :----: | :---------------: | :------------------: | :-----: | :---: |
+|   U1   | ATSAMV71Q19B-AAB  |                      |         | 90mA  |
+|   U3   |   ATA6561-GAQW    |        0.01mA        | 0.215mA | 500mA |
+|   U6   |   ATA6561-GAQW    | 0mA (Not in Config.) |         |       |
+|   U5   | IS45S16800F-7TLA2 | 0mA (Not in Config.) |         |       |
+|        |                   |                      |         |       |
+
+
