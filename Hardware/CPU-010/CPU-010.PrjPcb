@@ -140,6 +140,23 @@ GenerateClassCluster=0
 DocumentUniqueId=XKZIFSNE
 
 [Document7]
+DocumentPath=Ethernet.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=4
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ABVRUBJR
+
+[Document8]
 DocumentPath=CPU-010.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UWTXAXSE
 
-[Document8]
+[Document9]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0201.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document10]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0402.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document11]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0603.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document12]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0805.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document13]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_1206.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,8 +258,110 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document14]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_1210.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document15]
+DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0201.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document16]
+DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0402.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document17]
+DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0603.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document18]
+DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0805.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document19]
+DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_1206.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document20]
+DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_2512.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -274,28 +393,28 @@ Name=VariantLongDescription
 Value=-
 
 [Parameter1]
-Name=TemplateRevision
-Value=B
+Name=ProjectAuthor
+Value=E. Sims
 
 [Parameter2]
-Name=ProjectTitle
-Value=SAM V71 CPU Module
-
-[Parameter3]
-Name=ProjectRevision
-Value=A
-
-[Parameter4]
-Name=ProjectOrganization
-Value=Let's Build Rockets Inc.
-
-[Parameter5]
 Name=ProjectDocumentNumber
 Value=CPU-010
 
+[Parameter3]
+Name=ProjectOrganization
+Value=Let's Build Rockets Inc.
+
+[Parameter4]
+Name=ProjectRevision
+Value=A
+
+[Parameter5]
+Name=ProjectTitle
+Value=SAM V71 CPU Module
+
 [Parameter6]
-Name=ProjectAuthor
-Value=E. Sims
+Name=TemplateRevision
+Value=B
 
 [Configuration1]
 Name=Sources

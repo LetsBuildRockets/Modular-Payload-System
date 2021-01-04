@@ -21,12 +21,17 @@
 ## Design Notes
 ### Power Consumption
 
-| Device |        PN         |         Min.         |  Typ.   | Max.  |
-| :----: | :---------------: | :------------------: | :-----: | :---: |
-|   U1   | ATSAMV71Q19B-AAB  |                      |         | 90mA  |
-|   U3   |   ATA6561-GAQW    |        0.01mA        | 0.215mA | 500mA |
-|   U6   |   ATA6561-GAQW    | 0mA (Not in Config.) |         |       |
-|   U5   | IS45S16800F-7TLA2 | 0mA (Not in Config.) |         |       |
-|        |                   |                      |         |       |
+|      Device       |          PN          |         Min.         | Typ.  | Max.  |
+| :---------------: | :------------------: | :------------------: | :---: | :---: |
+|        U1         |   ATSAMV71Q19B-AAB   |                      |       | 90mA  |
+|        U3         |     ATA6561-GAQW     |        0.01mA        | 0.2mA | 0.5mA |
+|        U4         |     ATA6561-GAQW     | 0mA (Not in Config.) | 0.2mA | 0.5mA |
+|        U5         |  IS45S16800F-7TLA2   | 0mA (Not in Config.) | 80mA  | 120mA |
+|        U8         |     KSZ8061RNBV      | 0mA (Not in Config.) |       |       |
+|        X1         |                      |                      |       |       |
+|        X2         | MC2016K25.0000C16ESH | 0mA (Not in Config.) |  1mA  |  5mA  |
+| SD Card<br/>e.MMC |                      | 0mA (Not in Config.) | 100mA | 200mA |
+|                   |                      |                      |       |       |
+|       Total       |                      |                      |       |       |
 
 
