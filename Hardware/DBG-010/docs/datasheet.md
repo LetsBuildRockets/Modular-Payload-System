@@ -22,16 +22,14 @@ The board provides the following functionality:
 
 
 ## Configurations
-### DBG-010
-This configuration has all of the functionality of the board. I has the banana jacks for powering the bus, the enable lines,  P_GOOD, two CAN transceivers, and the ATSAMC21G17.
 ### DBG-011
-Same as DBG-010 but with P1 and P2 installed
+This configuration has all of the functionality of the board. It has the banana jacks for powering the bus, the enable lines,  P_GOOD, two CAN transceivers, and the ATSAMC21G17.
 ### DBG-012
-This configuration only has the banana jacks for powering the bus, the enable lines, and P_GOOD. This configuration is designed for simply providing power to the bus
+Same as DBG-010 but with P1 and P2 installed
 ### DBG-013
-Same as DBG-012 but with P1 and P2 installed
+This configuration only has the banana jacks for powering the bus, the enable lines, and P_GOOD. This configuration is designed for simply providing power to the bus
 ### DBG-014
-This configuration only has the banana jacks. This configuration is designed to breakout the power connections to measure or load the rails for testing
+This configuration only has the banana jacks and top and bottom bus connectors. This configuration is designed to breakout the power connections to measure or load the rails for testing
 
 ## Jumpers
 - **P5** enables generation of the +5V_Preboot rail from the +5V rail. Jumper pins 1 and 2 to enable. Jumper pins 2 and 3 to disable.

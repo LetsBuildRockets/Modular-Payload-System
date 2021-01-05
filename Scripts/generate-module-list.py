@@ -3,7 +3,7 @@ from os.path import isfile, join
 from urllib.request import urlopen
 import json
 from datetime import datetime
-
+import re
 
 hardwareIgnoreList = ['Reference', 'lib']
 moduleNames = listdir('./Hardware')
@@ -14,9 +14,11 @@ modules = []
 class Module:
     def __init__(self, number):
         self.number = number
+        self.title = '-'
         self.revision = '-'
         self.datasheet = '-'
         self.release = '-'
+        self.assemblies = []
 
 moduleNames = [x.upper() for x in moduleNames]
 for ig in hardwareIgnoreList:
@@ -30,12 +32,33 @@ for modulename in moduleNames:
     if isfile(PrjPcbPath):
         PrjPcb = []
         for line in open(PrjPcbPath, "r"):
-            PrjPcb.append(line.rstrip())
-        if 'name=projectrevision' in [x.lower() for x in PrjPcb]:
-            module.revision = (PrjPcb[[x.lower() for x in PrjPcb].index('name=projectrevision')+1][6:])
+            PrjPcb.append(line)
+        if 'name=projectrevision' in [x.lower().rstrip() for x in PrjPcb]:
+            module.revision = (PrjPcb[[x.lower().rstrip() for x in PrjPcb].index('name=projectrevision')+1][6:]).rstrip()
             for tag in githubtags:
                 if tag['name'] == module.number+'-'+module.revision:
                     module.release = 'https://github.com/'+repoowner+'/'+reponame+'/releases/tag/'+tag['name']
+        if 'name=projecttitle' in [x.lower().rstrip() for x in PrjPcb]:
+            module.title = (PrjPcb[[x.lower().rstrip() for x in PrjPcb].index('name=projecttitle')+1][6:]).rstrip()
+
+        variantLocs = [i for i, x in enumerate(PrjPcb) if x[:15] == "[ProjectVariant"]
+        if len(variantLocs) > 0:
+            module.assemblies = []
+            linebrLocs = [i for i, x in enumerate(PrjPcb) if x == "\n"]
+            for variantNum, variantLoc in enumerate(variantLocs):
+                start = variantLoc
+                paracount = int(PrjPcb[start+4][15:])
+                end = linebrLocs[next(end for end, linenum in enumerate(linebrLocs) if linenum > start)+paracount]
+                #print('Variant: ', variantNum)
+                for line in PrjPcb[start:end]:
+                    #print(line)
+                    if line.lower().startswith('description='):
+                        module.assemblies.append(line[12:].rstrip())
+                        #print(line[12:].rstrip())
+                if 'name=variantlongdescription' in [x.lower().rstrip() for x in PrjPcb[start:end]]:
+                    module.assemblies[-1] = module.assemblies[-1]+' - '+(PrjPcb[start:end][[x.lower().rstrip() for x in PrjPcb[start:end]].index('name=variantlongdescription')+1][6:]).rstrip()
+                #print()
+                
                         
     datasheetpath = PrjPcbPath = './Hardware/'+modulename+'/docs/datasheet.md'
     if isfile(datasheetpath):
@@ -67,18 +90,27 @@ def make_markdown_table(array):
 
     return markdown + "\n"
 
-moduleList = [['Number', 'Revision', 'Datasheet']]
+moduleList = [['Module', 'Revision', 'Datasheet']]
 for module in modules:
     if module.release != '-':
         module.revision = '['+module.revision+']('+module.release+')'
     else:
         if module.revision != '-':
             module.revision = module.revision+' (draft)'
-        
+
+    if module.title != '-':
+        module.number = module.number + ' - ' + module.title
+    
     if module.datasheet != '-':
         module.datasheet = '[datasheet]('+module.datasheet+')'
 
+    if len(module.assemblies) > 0 :
+        #module.number = module.number + '<br/>' + 'Assemblies:'
+        for assem in module.assemblies:
+            module.number = module.number + '<br/>-   ' + assem
+        
     moduleList.append([module.number,module.revision,module.datasheet])
+
 
 with open('./ModuleList.md', "r+") as f:
     data = f.read()
