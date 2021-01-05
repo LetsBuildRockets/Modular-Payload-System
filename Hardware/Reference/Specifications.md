@@ -26,7 +26,7 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
 1. Documentation
    1. Module naming shall conform to the naming convention outlined in this document. (This is not required for 3rd party modules, but is required if they will be contributed to LBR's repository.)
    2. Module schematics shall be licensed CC BY-NC 4.0
-   3. A compliance matrix shall be filled out. A template one can be generated using by running ```python ./Scripts/generate-compliance-matrix.py ``` from the root directory of this repository. (This is not required for 3rd party modules, but is required if they will be contributed to LBR's repository.)
+   3. A compliance matrix shall be completed. A template one can be generated using by running ```python ./Scripts/generate-compliance-matrix.py ``` from the root directory of this repository. (This is not required for 3rd party modules, but is required if they will be contributed to LBR's repository.)
 2. Performance
    1. Electrical connectors shall have continuous current carrying capacity derated to 80%.
    2. Ceramic capacitors shall be derated to 60% operating Voltage. Partial non compliance here is acceptable if the derating failure is only due to voltage rail tolerance. I.e.. a 10V capacitor is acceptable on a 5V rail.
