@@ -29,6 +29,7 @@ __Previews/
 *.REP
 *.TLT
 *.Dat
+*.zip
 
 *desktop.ini
 *.~lock*
