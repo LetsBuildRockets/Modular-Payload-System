@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=Top.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\CPU-010.PrjPcb
+Record=SubProject|SourceDocument=Top.MbsDoc|ProjectPath=..\CPU-010.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Top.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\..\CPUEX-010\CPUEX-010.PrjPcb
+Record=SubProject|SourceDocument=Top.MbsDoc|ProjectPath=..\..\CPUEX-010\CPUEX-010.PrjPcb

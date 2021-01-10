@@ -30,7 +30,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=Project Outputs for TMP-010
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -427,64 +427,40 @@ DocumentPath=Outputs\Design Rule Check - TMP-001.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010.REP
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.1.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.1.REP
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.1.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument8]
 DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument3]
 DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.REP
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument4]
 DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.RUL
 DItemRevisionGUID=
 
 [Parameter1]
-Name=TemplateRevision
-Value=B
+Name=ProjectAuthor
+Value=E. Sims
 
 [Parameter2]
-Name=ProjectTitle
-Value=Modular Payload System Template
-
-[Parameter3]
-Name=ProjectRevision
-Value=B
-
-[Parameter4]
-Name=ProjectOrganization
-Value=Let's Build Rockets Inc.
-
-[Parameter5]
 Name=ProjectDocumentNumber
 Value=TMP-010
 
+[Parameter3]
+Name=ProjectOrganization
+Value=Let's Build Rockets Inc.
+
+[Parameter4]
+Name=ProjectRevision
+Value=B
+
+[Parameter5]
+Name=ProjectTitle
+Value=Modular Payload System Template
+
 [Parameter6]
-Name=ProjectAuthor
-Value=E. Sims
+Name=TemplateRevision
+Value=B
 
 [Configuration1]
 Name=Sources
@@ -497,7 +473,7 @@ ContentTypeGUID=
 ConfigurationType=
 
 [Generic_EDE]
-OutputDir=Project Outputs for TMP-010
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
