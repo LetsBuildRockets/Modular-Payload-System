@@ -409,28 +409,28 @@ Name=VariantLongDescription
 Value=-
 
 [Parameter1]
-Name=TemplateRevision
-Value=B
+Name=ProjectAuthor
+Value=E. Sims
 
 [Parameter2]
-Name=ProjectTitle
-Value=CPU Expansion
-
-[Parameter3]
-Name=ProjectRevision
-Value=A
-
-[Parameter4]
-Name=ProjectOrganization
-Value=Let's Build Rockets Inc.
-
-[Parameter5]
 Name=ProjectDocumentNumber
 Value=CPUEX-010
 
+[Parameter3]
+Name=ProjectOrganization
+Value=Let's Build Rockets Inc.
+
+[Parameter4]
+Name=ProjectRevision
+Value=A
+
+[Parameter5]
+Name=ProjectTitle
+Value=CPU Expansion
+
 [Parameter6]
-Name=ProjectAuthor
-Value=E. Sims
+Name=TemplateRevision
+Value=B
 
 [Configuration1]
 Name=Sources

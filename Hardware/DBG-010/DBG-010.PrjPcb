@@ -352,24 +352,28 @@ Name=VariantLongDescription
 Value=Banana Jacks only
 
 [Parameter1]
-Name=ProjectAuthor
-Value=E. Sims
+Name=TemplateRevision
+Value=B
 
 [Parameter2]
-Name=ProjectDocumentNumber
-Value=DBG-010
+Name=ProjectTitle
+Value=Development/Debug Board
 
 [Parameter3]
-Name=ProjectOrganization
-Value=Let's Build Rockets Inc.
-
-[Parameter4]
 Name=ProjectRevision
 Value=A
 
+[Parameter4]
+Name=ProjectOrganization
+Value=Let's Build Rockets Inc.
+
 [Parameter5]
-Name=ProjectTitle
-Value=Development/Debug Board
+Name=ProjectDocumentNumber
+Value=DBG-010
+
+[Parameter6]
+Name=ProjectAuthor
+Value=E. Sims
 
 [Configuration1]
 Name=Sources
