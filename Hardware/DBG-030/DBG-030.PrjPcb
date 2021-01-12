@@ -40,23 +40,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Sheet1.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=OWMUZLKG
-
-[Document2]
 DocumentPath=..\lib\ModularPayload.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -73,7 +56,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MHSYEKUL
 
-[Document3]
+[Document2]
 DocumentPath=..\lib\ModularPayload.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -90,7 +73,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SETGXMVF
 
-[Document4]
+[Document3]
 DocumentPath=..\lib\Altium-libs-Shared\TP.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -107,7 +90,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XPARBRQV
 
-[Document5]
+[Document4]
 DocumentPath=..\lib\Altium-libs-Shared\TP.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -124,7 +107,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DUGBOFTJ
 
-[Document6]
+[Document5]
 DocumentPath=..\lib\Altium-libs-Shared\KEMET.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -141,7 +124,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=..\lib\Altium-libs-Shared\KEMET.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -158,7 +141,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DAJYWOJT
 
-[Document8]
+[Document7]
 DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0201.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -175,7 +158,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0402.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -192,7 +175,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document9]
 DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0603.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -209,7 +192,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_0805.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -226,7 +209,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_1206.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -243,7 +226,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=..\lib\Altium-libs-Shared\Panasonic\Panasonic_ERJ_2512.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -260,7 +243,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0201.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -277,7 +260,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0402.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -294,7 +277,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0603.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -311,7 +294,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_0805.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -328,7 +311,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_1206.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -345,7 +328,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=..\lib\Altium-libs-Shared\Murata\capacitor_murata_1210.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -362,7 +345,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=..\lib\Outjobs.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -379,8 +362,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
-DocumentPath=DBG-020.PcbDoc
+[Document20]
+DocumentPath=DBG-030.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -396,22 +379,13 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UWTXAXSE
 
-[ProjectVariant1]
-UniqueID=CE44915A-3390-4C66-80C2-41AD65D69596
-Description=DBG-021
-AllowFabrication=0
-ParameterCount=0
-VariationCount=1
-Variation1=Designator=R1|UniqueId=\HMBIQJCQ|Kind=1|AlternatePart= 
-ParamVariationCount=0
-
 [Parameter1]
 Name=TemplateRevision
 Value=B
 
 [Parameter2]
 Name=ProjectTitle
-Value=Pogo Pin TP Module
+Value=Pogo Pin Spacer Perf Module
 
 [Parameter3]
 Name=ProjectRevision
@@ -423,7 +397,7 @@ Value=Let's Build Rockets Inc.
 
 [Parameter5]
 Name=ProjectDocumentNumber
-Value=DBG-020
+Value=DBG-030
 
 [Parameter6]
 Name=ProjectAuthor
