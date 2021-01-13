@@ -30,7 +30,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=
+OutputPath=Project Outputs for DBG-020
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -38,6 +38,11 @@ IncludeDesignInRelease=0
 [Preferences]
 PrefsVaultGUID=
 PrefsRevisionGUID=
+
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]
+ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
 DocumentPath=Sheet1.SchDoc
@@ -401,9 +406,83 @@ UniqueID=CE44915A-3390-4C66-80C2-41AD65D69596
 Description=DBG-021
 AllowFabrication=0
 ParameterCount=0
-VariationCount=1
+VariationCount=3
 Variation1=Designator=R1|UniqueId=\HMBIQJCQ|Kind=1|AlternatePart= 
+Variation2=Designator=R2|UniqueId=\PHOPUTWR|Kind=1|AlternatePart= 
+Variation3=Designator=R1|UniqueId=\KKFUCDYE|Kind=1|AlternatePart= 
 ParamVariationCount=0
+
+[GeneratedDocument1]
+DocumentPath=Outputs\DBG-020_A\NC Drill\DBG-020_A.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Outputs\DBG-020\Gerber\DBG-020_A.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Outputs\DBG-020_A\NC Drill\DBG-020_A.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Outputs\DBG-020\Gerber\DBG-020_A.REP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.REP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Outputs\DBG-020\Gerber\DBG-020_A.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Outputs\DBG-020_A\Gerber\DBG-020_A.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Outputs\DBG-020_A\NC Drill\DBG-020_A.TXT
+DItemRevisionGUID=
 
 [Parameter1]
 Name=TemplateRevision
@@ -436,11 +515,41 @@ ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
 OutputJobsCount=0
-ContentTypeGUID=
-ConfigurationType=
+ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
+ConfigurationType=Source
+
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration3]
+Name=Assembly DBG-021
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=DBG-021
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
+[Configuration4]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for DBG-020
 
 [OutputGroup1]
 Name=Netlist Outputs

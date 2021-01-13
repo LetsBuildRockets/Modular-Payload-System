@@ -18,7 +18,7 @@ RevisionNamingSchemeGUID=
 Name=Outjobs.OutJob
 Description=
 TargetOutputMedium=PDF
-VariantName=TMP-011
+VariantName=DBG-021
 VariantScope=1
 CurrentConfigurationName=
 TargetPrinter=Virtual Printer
@@ -55,14 +55,26 @@ OutputEnabled2_OutputMedium2=0
 OutputEnabled2_OutputMedium3=1
 OutputDefault2=0
 Configuration2_Name1=OutputConfigurationParameter1
-Configuration2_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=D:\Users\erics\Documents\Modular-Payload-System\Hardware\TMP-010\TMP-010.PcbDoc
+Configuration2_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=C:\active\Modular-Payload-System\Hardware\DBG-020\DBG-020.PcbDoc
+OutputType3=NC Drill
+OutputName3=NC Drill Files
+OutputCategory3=Fabrication
+OutputDocumentPath3=
+OutputVariantName3=
+OutputEnabled3=0
+OutputEnabled3_OutputMedium1=0
+OutputEnabled3_OutputMedium2=0
+OutputEnabled3_OutputMedium3=2
+OutputDefault3=0
+Configuration3_Name1=OutputConfigurationParameter1
+Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes|DocumentPath=C:\active\Modular-Payload-System\Hardware\DBG-020\DBG-020.PcbDoc
 
 [PublishSettings]
-OutputFilePath2=Outputs\VariantName\VariantName_sch.pdf
+OutputFilePath2=C:\active\Modular-Payload-System\Hardware\DBG-020\Outputs\VariantName_A\VariantName_A_sch.pdf
 ReleaseManaged2=0
 OutputBasePath2=Outputs\
-OutputPathMedia2==VariantName
-OutputPathMediaValue2==VariantName
+OutputPathMedia2==VariantName+'_'+ProjectRevision
+OutputPathMediaValue2==VariantName+'_'+ProjectRevision
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
@@ -85,11 +97,11 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=D:\Users\erics\Documents\Modular-Payload-System\Hardware\TMP-010\Outputs\TMP-010\
+OutputFilePath3=C:\active\Modular-Payload-System\Hardware\DBG-030\Outputs\DBG-030_A\
 ReleaseManaged3=0
-OutputBasePath3=Outputs\
-OutputPathMedia3==ProjectName
-OutputPathMediaValue3==ProjectName
+OutputBasePath3=.\Outputs\
+OutputPathMedia3==ProjectName+'_'+ProjectRevision
+OutputPathMediaValue3==ProjectName+'_'+ProjectRevision
 OutputPathOutputer3=[Output Type]
 OutputPathOutputerPrefix3=
 OutputPathOutputerValue3=
@@ -100,9 +112,9 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Outputs\VariantName\VariantName_sch.pdf
+RelativeOutputPath2=C:\active\Modular-Payload-System\Hardware\DBG-020\Outputs\VariantName_A\VariantName_A_sch.pdf
 OpenOutputs2=1
-RelativeOutputPath3=D:\Users\erics\Documents\Modular-Payload-System\Hardware\TMP-010\Outputs\TMP-010\
+RelativeOutputPath3=C:\active\Modular-Payload-System\Hardware\DBG-030\Outputs\DBG-030_A\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
