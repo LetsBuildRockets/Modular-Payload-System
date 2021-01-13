@@ -430,38 +430,59 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document24]
+DocumentPath=..\lib\Outjobs.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
 UniqueID=33A153E8-C668-46E3-9BBA-B8A4983B4E00
 Description=PS-011
 AllowFabrication=0
-ParameterCount=0
+ParameterCount=1
 VariationCount=1
 Variation1=Designator=R1|UniqueId=\QDDYITRY|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
+[Parameter2_1]
+Name=VariantLongDescription
+Value=Power Supply Module
+
 [Parameter1]
-Name=ProjectAuthor
-Value=E. Sims
+Name=TemplateRevision
+Value=B
 
 [Parameter2]
-Name=ProjectDocumentNumber
-Value=PS-010
+Name=ProjectTitle
+Value=Power Supply Module 5V/3.2A, 12V/4A
 
 [Parameter3]
-Name=ProjectOrganization
-Value=Let's Build Rockets Inc.
-
-[Parameter4]
 Name=ProjectRevision
 Value=A
 
+[Parameter4]
+Name=ProjectOrganization
+Value=Let's Build Rockets Inc.
+
 [Parameter5]
-Name=ProjectTitle
-Value=Power Supply Module
+Name=ProjectDocumentNumber
+Value=PS-010
 
 [Parameter6]
-Name=TemplateRevision
-Value=B
+Name=ProjectAuthor
+Value=E. Sims
 
 [Configuration1]
 Name=Sources
