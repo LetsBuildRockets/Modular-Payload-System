@@ -5,7 +5,7 @@ WINDOW 0 8 -56 Bottom 2
 WINDOW 3 8 56 Top 2
 SYMATTR Value LM5050-1
 SYMATTR Prefix X
-SYMATTR ModelFile D:\Users\erics\Documents\Modular-Payload-System\Hardware\PS-001\Simulation\LM5050-1.LIB
+SYMATTR ModelFile LM5050-1.LIB
 PIN -64 32 LEFT 8
 PINATTR PinName VS
 PINATTR SpiceOrder 1

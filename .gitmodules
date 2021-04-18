@@ -1,3 +1,12 @@
 [submodule "Hardware/lib/Altium-libs-Shared"]
 	path = Hardware/lib/Altium-libs-Shared
 	url = https://github.com/ericsims/Altium-libs
+[submodule "Software/Common/libcanard"]
+	path = Software/Common/libcanard
+	url = https://github.com/UAVCAN/libcanard
+[submodule "Software/Common/o1heap"]
+	path = Software/Common/o1heap
+	url = https://github.com/pavel-kirienko/o1heap
+[submodule "Software/Common/public_regulated_data_types"]
+	path = Software/Common/public_regulated_data_types
+	url = https://github.com/UAVCAN/public_regulated_data_types

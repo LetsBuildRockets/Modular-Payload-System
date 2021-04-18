@@ -422,22 +422,6 @@ VariationCount=1
 Variation1=Designator=R1|UniqueId=\HMBIQJCQ|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
-[GeneratedDocument1]
-DocumentPath=Outputs\Design Rule Check - TMP-001.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.REP
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Outputs\TMP-010\Gerber\TMP-010_B.RUL
-DItemRevisionGUID=
-
 [Parameter1]
 Name=ProjectAuthor
 Value=E. Sims
