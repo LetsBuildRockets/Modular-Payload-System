@@ -10,3 +10,6 @@
 [submodule "Software/Common/public_regulated_data_types"]
 	path = Software/Common/public_regulated_data_types
 	url = https://github.com/UAVCAN/public_regulated_data_types
+[submodule "Test/INST-Drivers"]
+	path = Test/INST-Drivers
+	url = https://github.com/ericsims/INST-Drivers
