@@ -48,19 +48,22 @@ Bus modules have a basic naming scheme in the format XXX-NNM, for example CPU-01
             2. +VBAT rail steady state current shall be no more than 7.6A
             3. Total +VBAT rail transient current shall be < 1.5x max rated current of 7.6A * 1.5 =  11.4A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
             4. Rise time shall be no faster than **TBD** V/s
-            5. All modules that generate the +VBAT rail via switching regulator topologies shall be 100% tested to ensure conformance to operating voltage requirement. This requirement does not apply to modules that generate the +VBAT rail without active regulation and without power path components that will significantly cause a drop (or increase) in rail voltage.
+            5. Rise shall be monotonic
+            6. All modules that generate the +VBAT rail via switching regulator topologies shall be 100% tested to ensure conformance to operating voltage requirement. This requirement does not apply to modules that generate the +VBAT rail without active regulation and without power path components that will significantly cause a drop (or increase) in rail voltage.
         3. +12V Rail
             1. +12V rail shall be 11.2VDC to 12.6VDC
             2. +12V rail steady state current shall be no more than 4A
             3. Total +12V rail transient current shall be < 1.5x max rated current of 4A * 1.5=  6A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
-            4. Rise time shall be no faster than **TBD** V/s
-            5. All modules capable of generating the +12V rail shall be 100% tested to ensure conformance to operating voltage requirement 
+            4. +12V rail rise time shall be no faster than 10 V/ms
+            5. +12V rail rise shall be monotonic
+            6. All modules capable of generating the +12V rail shall be 100% tested to ensure conformance to operating voltage requirement 
         4. +5V Rail
             1. +5V rail shall be 4.85V to 5.25V
             2. +5V rail steady state current shall be no more than 3.2A
             3. Total +5V rail transient current shall be < 1.5x max rated current of 3.2A * 1.5=  4.8A (this includes inrush or any other transient loads, such as when radios are transmitting, etc.)
-            4. Rise time shall be no faster than **TBD** V/s
-            5. All modules capable of generating the +5V rail shall be 100% tested to ensure conformance to operating voltage requirement
+            4. +5V rail rise time shall be no faster than 10 V/ms
+            5. +5V rail rise shall be monotonic
+            6. All modules capable of generating the +5V rail shall be 100% tested to ensure conformance to operating voltage requirement
         5. +VBAT_Preboot
             1. Reference: Typically, modules don't use this rail.
             2. Reference: Loads on this net will always draw from the battery and will bypass any Under Voltage Lock Out (UVLO). This could damage the battery. Minimize loads on this rail as much as possible. For normal operation, no 3rd party module should be using this rail. Typically, the only load is the +5V_Preboot regulator.
