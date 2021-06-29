@@ -167,7 +167,7 @@
 // <i> Indicates whether configuration for DPLL is enabled or not
 // <id> enable_fdpll96m
 #ifndef CONF_DPLL_CONFIG
-#define CONF_DPLL_CONFIG 0
+#define CONF_DPLL_CONFIG 1
 #endif
 
 #define CONF_OSCCTRL_DPLL_REFCLK_XOSC32K 0
@@ -196,7 +196,7 @@
 // <i> Select the clock source.
 // <id> fdpll96m_ref_clock
 #ifndef CONF_DPLL_REFCLK_VAL
-#define CONF_DPLL_REFCLK_VAL CONF_OSCCTRL_DPLL_REFCLK_XOSC32K
+#define CONF_DPLL_REFCLK_VAL CONF_OSCCTRL_DPLL_REFCLK_GCLK1
 #endif
 
 #if (CONF_DPLL_REFCLK_VAL <= CONF_OSCCTRL_DPLL_REFCLK_GCLK0)
@@ -212,7 +212,7 @@
 // <i> Indicates whether Digital Phase Locked Loop is enabled or not
 // <id> fdpll96m_arch_enable
 #ifndef CONF_DPLL_ENABLE
-#define CONF_DPLL_ENABLE 0
+#define CONF_DPLL_ENABLE 1
 #endif
 
 // <q> On Demand Control
@@ -233,14 +233,14 @@
 // <i> Value of LDRFRAC is calculated using Fclk_dpll=Fckr*(LDR+1+LDRFRAC/16)/(2^presc) formula as given in datasheet. This value is directly written in to DPLLRATIO register
 // <id> fdpll96m_ldrfrac
 #ifndef CONF_DPLL_LDRFRAC
-#define CONF_DPLL_LDRFRAC 0xd
+#define CONF_DPLL_LDRFRAC 0x0
 #endif
 
 // <o> Loop Divider Ratio Integer Part <0x0-0xFFF>
 // <i> Value of LDR is calculated using Fclk_dpll=Fckr*(LDR+1+LDRFRAC/16)/(2^presc) formula as given in datasheet. This value is directly written in to DPLLRATIO register
 // <id> fdpll96m_ldr
 #ifndef CONF_DPLL_LDR
-#define CONF_DPLL_LDR 0x5b7
+#define CONF_DPLL_LDR 0x2f
 #endif
 
 // <o> Clock Divider <0x0-0x3FF>

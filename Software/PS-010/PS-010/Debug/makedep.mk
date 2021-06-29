@@ -2,7 +2,15 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+..\..\Common\libcanard\libcanard\canard.c
+
+..\..\Common\libcanard\libcanard\canard_dsdl.c
+
+..\..\Common\o1heap\o1heap\o1heap.c
+
 atmel_start.c
+
+bsp\bsp_can.c
 
 Device_Startup\startup_samc21.c
 

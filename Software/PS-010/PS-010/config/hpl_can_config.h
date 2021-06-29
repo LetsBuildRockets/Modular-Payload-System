@@ -20,7 +20,7 @@
 // <i> Bit Rate Switch Enable
 // <id> can_cccr_brse
 #ifndef CONF_CAN0_CCCR_BRSE
-#define CONF_CAN0_CCCR_BRSE 0
+#define CONF_CAN0_CCCR_BRSE 1
 #endif
 
 // <hidden> Run In Standby is invalid for C21/E5x/D5x devices
@@ -51,28 +51,28 @@
 // <i> Baud Rate Prescale
 // <id> can_btp_brp
 #ifndef CONF_CAN0_BTP_BRP
-#define CONF_CAN0_BTP_BRP 3
+#define CONF_CAN0_BTP_BRP 5
 #endif
 
 // <o> time segment before sample point <2-256>
 // <i> time segment before sample point
 // <id> can_btp_tseg1
 #ifndef CONF_CAN0_BTP_TSEG1
-#define CONF_CAN0_BTP_TSEG1 11
+#define CONF_CAN0_BTP_TSEG1 13
 #endif
 
 // <o> time segment after sample point <1-128>
 // <i> time segment after sample point
 // <id> can_btp_tseg2
 #ifndef CONF_CAN0_BTP_TSEG2
-#define CONF_CAN0_BTP_TSEG2 8
+#define CONF_CAN0_BTP_TSEG2 2
 #endif
 
 // <o> Data (Re)Syncronization Jump Width <1-128>
 // <i> (Re)Syncronization Jump Width
 // <id> can_btp_sjw
 #ifndef CONF_CAN0_BTP_SJW
-#define CONF_CAN0_BTP_SJW 4
+#define CONF_CAN0_BTP_SJW 2
 #endif
 
 // </h>
@@ -97,21 +97,21 @@
 // <i> Fast time segment before sample point
 // <id> can_dbtp_dtseg1
 #ifndef CONF_CAN0_DBTP_DTSEG1
-#define CONF_CAN0_DBTP_DTSEG1 11
+#define CONF_CAN0_DBTP_DTSEG1 6
 #endif
 
 // <o> Data time segment after sample point <1-16>
 // <i> Fast time segment after sample point
 // <id> can_dbtp_dtseg2
 #ifndef CONF_CAN0_DBTP_DTSEG2
-#define CONF_CAN0_DBTP_DTSEG2 4
+#define CONF_CAN0_DBTP_DTSEG2 1
 #endif
 
 // <o> Data (Re)Syncronization Jump Width <1-16>
 // <i> Fast Syncronization Jump Width
 // <id> can_dbtp_dsjw
 #ifndef CONF_CAN0_DBTP_DSJW
-#define CONF_CAN0_DBTP_DSJW 4
+#define CONF_CAN0_DBTP_DSJW 2
 #endif
 
 // </h>
@@ -153,7 +153,7 @@
 // <7=> 64 byte data field.
 // <id> can_rxesc_f0ds
 #ifndef CONF_CAN0_RXESC_F0DS
-#define CONF_CAN0_RXESC_F0DS 7
+#define CONF_CAN0_RXESC_F0DS 5
 #endif
 
 /* Bytes size for CAN FIFO 0 element, plus 8 bytes for R0,R1 */
@@ -169,7 +169,7 @@
 // <i> Number of Tx Buffers used for Tx FIFO
 // <id> can_txbc_tfqs
 #ifndef CONF_CAN0_TXBC_TFQS
-#define CONF_CAN0_TXBC_TFQS 2
+#define CONF_CAN0_TXBC_TFQS 8
 #endif
 
 // <o> Tx Buffer Data Field Size
@@ -184,7 +184,7 @@
 // <7=> 64 byte data field.
 // <id> can_txesc_tbds
 #ifndef CONF_CAN0_TXESC_TBDS
-#define CONF_CAN0_TXESC_TBDS 0
+#define CONF_CAN0_TXESC_TBDS 5
 #endif
 
 /* Bytes size for CAN Transmit Buffer element, plus 8 bytes for R0,R1 */

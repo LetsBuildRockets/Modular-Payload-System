@@ -2,16 +2,16 @@ format_version: '2'
 name: PS-010
 versions:
   api: '1.0'
-  backend: 1.8.491
-  commit: 605bd5a7663644fb84783aa2b00942b79b0d8955
+  backend: 1.8.543
+  commit: 931b2422bde1a793dea853de68547f48bf245b0f
   content: unknown
   content_pack_name: unknown
   format: '2'
-  frontend: 1.8.491
-  packs_version_avr8: 1.0.1446
+  frontend: 1.8.543
+  packs_version_avr8: 1.0.1457
   packs_version_qtouch: unknown
   packs_version_sam: 1.0.1726
-  version_backend: 1.8.491
+  version_backend: 1.8.543
   version_frontend: ''
 board:
   identifier: CustomBoard
@@ -454,14 +454,14 @@ drivers:
     functionality: System
     api: HAL:HPL:GCLK
     configuration:
-      $input: 30000000
-      $input_id: External Crystal Oscillator 0.4-32MHz (XOSC)
-      RESERVED_InputFreq: 30000000
-      RESERVED_InputFreq_id: External Crystal Oscillator 0.4-32MHz (XOSC)
+      $input: 48000000
+      $input_id: Fractional Digital Phase Locked Loop (FDPLL96M)
+      RESERVED_InputFreq: 48000000
+      RESERVED_InputFreq_id: Fractional Digital Phase Locked Loop (FDPLL96M)
       _$freq_output_Generic clock generator 0: 30000000
       _$freq_output_Generic clock generator 1: 1000000
       _$freq_output_Generic clock generator 2: 3000000
-      _$freq_output_Generic clock generator 3: 30000000
+      _$freq_output_Generic clock generator 3: 48000000
       _$freq_output_Generic clock generator 4: 30000000
       _$freq_output_Generic clock generator 5: 30000000
       _$freq_output_Generic clock generator 6: 30000000
@@ -472,7 +472,7 @@ drivers:
       enable_gclk_gen_1__externalclock: 1000000
       enable_gclk_gen_2: true
       enable_gclk_gen_2__externalclock: 1000000
-      enable_gclk_gen_3: false
+      enable_gclk_gen_3: true
       enable_gclk_gen_3__externalclock: 1000000
       enable_gclk_gen_4: false
       enable_gclk_gen_4__externalclock: 1000000
@@ -497,7 +497,7 @@ drivers:
       gclk_arch_gen_2_oe: false
       gclk_arch_gen_2_oov: false
       gclk_arch_gen_2_runstdby: false
-      gclk_arch_gen_3_enable: false
+      gclk_arch_gen_3_enable: true
       gclk_arch_gen_3_idc: false
       gclk_arch_gen_3_oe: false
       gclk_arch_gen_3_oov: false
@@ -533,7 +533,7 @@ drivers:
       gclk_gen_2_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
       gclk_gen_3_div: 1
       gclk_gen_3_div_sel: false
-      gclk_gen_3_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+      gclk_gen_3_oscillator: Fractional Digital Phase Locked Loop (FDPLL96M)
       gclk_gen_4_div: 1
       gclk_gen_4_div_sel: false
       gclk_gen_4_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
@@ -622,17 +622,17 @@ drivers:
     functionality: System
     api: HAL:HPL:OSCCTRL
     configuration:
-      $input: 32768
-      $input_id: 32kHz External Crystal Oscillator (XOSC32K)
-      RESERVED_InputFreq: 32768
-      RESERVED_InputFreq_id: 32kHz External Crystal Oscillator (XOSC32K)
+      $input: 1000000
+      $input_id: Generic clock generator 1
+      RESERVED_InputFreq: 1000000
+      RESERVED_InputFreq_id: Generic clock generator 1
       _$freq_output_48MHz Internal Oscillator (OSC48M): 4000000
       _$freq_output_External Crystal Oscillator 0.4-32MHz (XOSC): '30000000'
-      _$freq_output_Fractional Digital Phase Locked Loop (FDPLL96M): 47998976
-      enable_fdpll96m: false
+      _$freq_output_Fractional Digital Phase Locked Loop (FDPLL96M): 48000000
+      enable_fdpll96m: true
       enable_osc48m: false
       enable_xosc: true
-      fdpll96m_arch_enable: false
+      fdpll96m_arch_enable: true
       fdpll96m_arch_filter: Default filter mode
       fdpll96m_arch_lbypass: false
       fdpll96m_arch_lpen: false
@@ -641,10 +641,10 @@ drivers:
       fdpll96m_arch_runstdby: false
       fdpll96m_arch_wuf: false
       fdpll96m_clock_div: 0
-      fdpll96m_ldr: 1463
-      fdpll96m_ldrfrac: 13
+      fdpll96m_ldr: 47
+      fdpll96m_ldrfrac: 0
       fdpll96m_presc: '1'
-      fdpll96m_ref_clock: 32kHz External Crystal Oscillator (XOSC32K)
+      fdpll96m_ref_clock: Generic clock generator 1
       osc48m_arch_enable: false
       osc48m_arch_ondemand: true
       osc48m_arch_runstdby: false
@@ -758,16 +758,16 @@ drivers:
     functionality: CAN
     api: HAL:Driver:CAN_Async
     configuration:
-      can_btp_brp: 3
-      can_btp_sjw: 4
-      can_btp_tseg1: 11
-      can_btp_tseg2: 8
-      can_cccr_brse: false
+      can_btp_brp: 5
+      can_btp_sjw: 2
+      can_btp_tseg1: 13
+      can_btp_tseg2: 2
+      can_cccr_brse: true
       can_cccr_fdoe: true
       can_dbtp_dbrp: 1
-      can_dbtp_dsjw: 4
-      can_dbtp_dtseg1: 11
-      can_dbtp_dtseg2: 4
+      can_dbtp_dsjw: 2
+      can_dbtp_dtseg1: 6
+      can_dbtp_dtseg2: 1
       can_dbtp_tdc: false
       can_gfc_anfe: Reject
       can_gfc_anfs: Reject
@@ -780,15 +780,15 @@ drivers:
       can_ie_ew: false
       can_mrcfg_dqos: Background (no sensitive operation)
       can_mrcfg_runstandby: false
-      can_rxesc_f0ds: 64 byte data field.
+      can_rxesc_f0ds: 32 byte data field.
       can_rxf0c_f0om: blocking mode
       can_rxf0c_f0s: 16
       can_rxf0c_f0wm: 0
       can_sidfc_lss: 2
-      can_txbc_tfqs: 2
+      can_txbc_tfqs: 8
       can_txefc_efs: 2
       can_txefc_efwm: 0
-      can_txesc_tbds: 8 byte data field.
+      can_txesc_tbds: 32 byte data field.
       can_xidam_eidm: 0
       can_xidfc_lss: 2
     optional_signals:
@@ -811,11 +811,11 @@ drivers:
       domain_group:
         nodes:
         - name: CAN
-          input: Generic clock generator 0
+          input: Generic clock generator 3
           external: false
           external_frequency: 0
         configuration:
-          can_gclk_selection: Generic clock generator 0
+          can_gclk_selection: Generic clock generator 3
   TEMPERATURE_SENSOR_0:
     user_label: TEMPERATURE_SENSOR_0
     definition: Atmel:SAMC21_Drivers:0.0.1::SAMC21G17A-AN::TSENS::driver_config_definition::TSENS::HAL:Driver:Temperature.Sync

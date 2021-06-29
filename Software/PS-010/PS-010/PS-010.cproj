@@ -172,7 +172,7 @@
           <AcmeProjectActionInfo Action="File" Source="hpl/can/hpl_can_base.h" IsConfig="false" Hash="Ge8MmCDXjUYBWEu7BCa1dA" />
           <AcmeProjectActionInfo Action="File" Source="hpl/core/hpl_core_m0plus_base.c" IsConfig="false" Hash="Qi2FtuWLBmnjJYwz+gmCBQ" />
           <AcmeProjectActionInfo Action="File" Source="hpl/core/hpl_core_port.h" IsConfig="false" Hash="RXrDMMracCeflR1F9jWiGg" />
-          <AcmeProjectActionInfo Action="File" Source="hpl/core/hpl_init.c" IsConfig="false" Hash="Zo2NdnuL+Q4wV0pCzAuQPg" />
+          <AcmeProjectActionInfo Action="File" Source="hpl/core/hpl_init.c" IsConfig="false" Hash="oHCvcM75TFsQqeIiK08ElA" />
           <AcmeProjectActionInfo Action="File" Source="hpl/dmac/hpl_dmac.c" IsConfig="false" Hash="gify5efFpFgwlmM6KGyv9A" />
           <AcmeProjectActionInfo Action="File" Source="hpl/gclk/hpl_gclk.c" IsConfig="false" Hash="ogRlweWqMJqf6EbEvQOmSw" />
           <AcmeProjectActionInfo Action="File" Source="hpl/gclk/hpl_gclk_base.h" IsConfig="false" Hash="VnaHvu/VnbGvOxrehrp2mQ" />
@@ -189,16 +189,16 @@
           <AcmeProjectActionInfo Action="File" Source="atmel_start.h" IsConfig="false" Hash="TNU9VszFRFbDuMJ3vToUzg" />
           <AcmeProjectActionInfo Action="File" Source="atmel_start.c" IsConfig="false" Hash="lom1/YOY9m/TDACgnyb3yA" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_adc_config.h" IsConfig="true" Hash="lUT81mhfnmSFNJWAGwmprg" />
-          <AcmeProjectActionInfo Action="File" Source="config/hpl_can_config.h" IsConfig="true" Hash="Y6drV3Cn09vS/8MGza23dg" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_can_config.h" IsConfig="true" Hash="nWJAKX10r9jtZLj0g3+Usg" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_dmac_config.h" IsConfig="true" Hash="hV4w94QYMtiYBFUmwSGP0A" />
-          <AcmeProjectActionInfo Action="File" Source="config/hpl_gclk_config.h" IsConfig="true" Hash="8A6RY8cR/cEtzmy2Ge7sDQ" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_gclk_config.h" IsConfig="true" Hash="73uHOAF5ee3XSgdWmn+DvA" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_mclk_config.h" IsConfig="true" Hash="kwpuIRRe5INXFJhwQEi06w" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_osc32kctrl_config.h" IsConfig="true" Hash="e9o/TJDK3cfkTdnVxdMDjA" />
-          <AcmeProjectActionInfo Action="File" Source="config/hpl_oscctrl_config.h" IsConfig="true" Hash="ZievZOjsVYR3mnjZB18wrQ" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_oscctrl_config.h" IsConfig="true" Hash="xOgMsL3xGoSKtMctiM3VCg" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_port_config.h" IsConfig="true" Hash="rMTNR+5FXtu+wfT1NbfRRA" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_sercom_config.h" IsConfig="true" Hash="DJYdnSOGnvd5BYBeOfnn3A" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_tsens_config.h" IsConfig="true" Hash="d55DiCk6XdH6PJMLDWOWOw" />
-          <AcmeProjectActionInfo Action="File" Source="config/peripheral_clk_config.h" IsConfig="true" Hash="djm8T9qzTsq9/G4AUdW11w" />
+          <AcmeProjectActionInfo Action="File" Source="config/peripheral_clk_config.h" IsConfig="true" Hash="DU3ZGcACLKWsNYtpuaFKkg" />
           <AcmeProjectActionInfo Action="File" Source="config/stdio_redirect_config.h" IsConfig="true" Hash="CKmkBk12sfr7mb+HRQBuzg" />
         </AcmeActionInfos>
         <NonsecureFilesInfo />
@@ -238,6 +238,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -281,6 +282,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -308,6 +310,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -351,6 +354,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -395,6 +399,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -423,6 +428,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -451,6 +457,30 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\Common\libcanard\libcanard\canard.c">
+      <SubType>compile</SubType>
+      <Link>canard.c</Link>
+    </Compile>
+    <Compile Include="..\..\Common\libcanard\libcanard\canard.h">
+      <SubType>compile</SubType>
+      <Link>canard.h</Link>
+    </Compile>
+    <Compile Include="..\..\Common\libcanard\libcanard\canard_dsdl.c">
+      <SubType>compile</SubType>
+      <Link>canard_dsdl.c</Link>
+    </Compile>
+    <Compile Include="..\..\Common\libcanard\libcanard\canard_dsdl.h">
+      <SubType>compile</SubType>
+      <Link>canard_dsdl.h</Link>
+    </Compile>
+    <Compile Include="..\..\Common\o1heap\o1heap\o1heap.c">
+      <SubType>compile</SubType>
+      <Link>o1heap.c</Link>
+    </Compile>
+    <Compile Include="..\..\Common\o1heap\o1heap\o1heap.h">
+      <SubType>compile</SubType>
+      <Link>o1heap.h</Link>
+    </Compile>
     <Compile Include="atmel_start.c">
       <SubType>compile</SubType>
     </Compile>
@@ -458,6 +488,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="atmel_start_pins.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bsp\bsp_can.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bsp\bsp_can.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="config\hpl_adc_config.h">
@@ -932,6 +968,7 @@
     <Folder Include="hpl\sercom\" />
     <Folder Include="hpl\tsens\" />
     <Folder Include="hri\" />
+    <Folder Include="bsp" />
     <Folder Include="stdio_redirect\" />
     <Folder Include="stdio_redirect\gcc\" />
   </ItemGroup>

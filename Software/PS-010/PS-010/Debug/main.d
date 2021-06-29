@@ -145,7 +145,9 @@ main.d main.o: .././main.c ../atmel_start.h ../driver_init.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\_pthreadtypes.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\machine\types.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\stdio.h \
- ../stdio_redirect/stdio_io.h ../Config/hpl_adc_config.h .././mps_utils.h
+ ../stdio_redirect/stdio_io.h ../Config/hpl_adc_config.h .././mps_utils.h \
+ ../../../Common/libcanard/libcanard/canard.h \
+ ../../../Common/o1heap/o1heap/o1heap.h
 
 ../atmel_start.h:
 
@@ -522,3 +524,7 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../Config/hpl_adc_config.h:
 
 .././mps_utils.h:
+
+../../../Common/libcanard/libcanard/canard.h:
+
+../../../Common/o1heap/o1heap/o1heap.h:

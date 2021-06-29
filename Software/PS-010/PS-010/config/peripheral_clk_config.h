@@ -129,7 +129,7 @@
 
 // <i> Select the clock source for CAN0.
 #ifndef CONF_GCLK_CAN0_SRC
-#define CONF_GCLK_CAN0_SRC GCLK_PCHCTRL_GEN_GCLK0_Val
+#define CONF_GCLK_CAN0_SRC GCLK_PCHCTRL_GEN_GCLK3_Val
 #endif
 
 /**
@@ -137,7 +137,7 @@
  * \brief CAN0's Clock frequency
  */
 #ifndef CONF_GCLK_CAN0_FREQUENCY
-#define CONF_GCLK_CAN0_FREQUENCY 30000000
+#define CONF_GCLK_CAN0_FREQUENCY 48000000
 #endif
 
 // <y> TSENS Clock Source

@@ -13,6 +13,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -31,6 +32,7 @@
       <Value>../hpl/pm</Value>
       <Value>../hpl/port</Value>
       <Value>../hpl/sercom</Value>
+      <Value>../hpl/tsens</Value>
       <Value>../hri</Value>
       <Value>../stdio_redirect</Value>
     </ListValues>
@@ -55,6 +57,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -73,6 +76,7 @@
       <Value>../hpl/pm</Value>
       <Value>../hpl/port</Value>
       <Value>../hpl/sercom</Value>
+      <Value>../hpl/tsens</Value>
       <Value>../hri</Value>
       <Value>../stdio_redirect</Value>
     </ListValues>
@@ -81,6 +85,7 @@
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../../../Common/libcanard/libcanard</Value>
+      <Value>../../../Common/o1heap/o1heap</Value>
       <Value>%24(PackRepoDir)\atmel\SAMC21_DFP\1.2.176\samc21\include</Value>
       <Value>../Config</Value>
       <Value>../</Value>
@@ -99,6 +104,7 @@
       <Value>../hpl/pm</Value>
       <Value>../hpl/port</Value>
       <Value>../hpl/sercom</Value>
+      <Value>../hpl/tsens</Value>
       <Value>../hri</Value>
       <Value>../stdio_redirect</Value>
     </ListValues>
