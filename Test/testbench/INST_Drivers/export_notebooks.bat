@@ -1,0 +1,1 @@
+jupyter nbconvert --to pdf --template better-article "*.ipynb"
